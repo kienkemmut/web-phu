@@ -1,9 +1,7 @@
 <template>
   <div>
-  	<div class="container-fluid screen-header">
-  		<div class="row">
-  			<div class="col-3 logo-app">VINHOMES LAND</div>
-  		</div>
+  	<div class="screen-header">
+		<div class="logo-app">VINHOMES LAND</div>
   	</div>
 
   </div>

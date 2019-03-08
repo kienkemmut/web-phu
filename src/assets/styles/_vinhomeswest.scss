@@ -1,10 +1,11 @@
 .card-header-sidebar {
-	background-color: #01313b !important;
+	background-color: #59658E !important;
 	color: #ffffff !important;
+	text-align: center;
 }
 .btn-custom {
 	padding: 1em;
-	background-color: #00a785 !important;
+	background-color: #59658E !important;
 	border-radius: 3px;
 	color: #ffffff !important;
 }
@@ -13,6 +14,8 @@
 	.text1 {
 		font-size: 20px;
 		font-weight: bold;
+		text-align: center;
+		color: #424F7E;
 	}
 	.image-vinhomeswest {
 		padding: 1em;
@@ -32,6 +35,7 @@
 		}
 		ul{
 	      	list-style: none;
+	      	list-style: none;
 		    margin-left: 0;
 		    padding-left: 1em;
 	    }
@@ -41,19 +45,58 @@
 	}
 	.form-mail-custom {
 		padding: 0 1em;
-		background-color: #00a785;
+		background-color: #697499;
+		text-align: center;
 	}
-	.btn-res {
+	.btn-register-now {
 		border-radius: 5em;
 		width: 100%;
 		color: #ffffff;
-		background-color: #337967;
+		background-color: #2A396E !important
+	}
+	.btn-register-now:hover {
+		color: #ffffff;
 	}
 }
 .card-Custom {
 	position: -webkit-sticky !important; /* Safari */
 	position: sticky !important;
 	top: 4em;
+	.btn-sidebar-details {
+		border: 1px solid #F0F1F4;
+		border-radius: 0;
+	}
+	.btn-sidebar-details:hover {
+		background-color: #9BA2BB
+	}
+	.btn-sidebar-overview {
+		border: 1px solid #F0F1F4;
+		border-radius: 0;
+	}
+	.btn-sidebar-overview:hover {
+		background-color: #9BA2BB
+	}
+	.btn-sidebar-design {
+		border: 1px solid #F0F1F4;
+		border-radius: 0;
+	}
+	.btn-sidebar-design:hover {
+		background-color: #9BA2BB
+	}
+	.btn-sidebar-smart {
+		border: 1px solid #F0F1F4;
+		border-radius: 0;
+	}
+	.btn-sidebar-smart:hover {
+		background-color: #9BA2BB
+	}
+	.btn-sidebar-pay {
+		border: 1px solid #F0F1F4;
+		border-radius: 0;
+	}
+	.btn-sidebar-pay:hover {
+		background-color: #9BA2BB
+	}
 }
 .content-page-overview {
 	text-align: left;
@@ -70,7 +113,7 @@
 	.text-overview {
 		font-size: 24px;
 		font-weight: 600;
-		color: #2d8bd0;
+		color: #424F7E;
 	}
 	.oveview-li {
 		float: left;
@@ -98,7 +141,8 @@
 	.text-page-design {
 		font-size: 24px;
 		font-weight: 600;
-		color: #2d8bd0;
+		color: #424F7E;
+		text-align: center;
 	}
 }
 .page-smart-vinhome {
@@ -133,6 +177,10 @@
 	    background-image: url("../images/vin-stay.jpg");
 	    background-size: 100% 100%;
 	    background-repeat: no-repeat;
+		transition: all .5s ease-in-out;
+	}
+	.image-vinhom-stay-1:hover {
+		transform: scale(1.05);
 	}
 	.image-vinhomeswest-1 {
 		padding: 1em;
@@ -141,6 +189,16 @@
 	    background-image: url("../images/vinhomeswest.jpg");
 	    background-size: 100% 100%;
 	    background-repeat: no-repeat;
+		transition: all .5s ease-in-out;
+	}
+	.image-vinhomeswest-1:hover {
+		transform: scale(1.05);
+	}
+	.text-page-smart {
+		font-size: 24px;
+		font-weight: 600;
+		color: #424F7E;
+		text-align: center;
 	}
 }
 .screen-page-pay {
@@ -153,5 +211,16 @@
 	    background-image: url("../images/line.jpg");
 	    background-size: 100% 100%;
 	    background-repeat: no-repeat;
+	}
+	.text-page-pay{
+		font-size: 24px;
+		font-weight: 600;
+		color: #424F7E;
+		text-align: center;
+	}
+	.btn-register-pay {
+		border-radius: 5em;
+		color: #ffffff;
+		background-color: #2A396E !important
 	}
 }

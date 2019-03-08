@@ -1,13 +1,15 @@
 .screen-header {
-	padding: 3em 0em 3.5em 1em;
-	background-color: #D8BAB3
+	padding: 3em 0em 3.5em 10em !important;
+	background-color: rgba(39, 57, 110, 1);
+	color: #ffffff;
 }
 .logo-app {
-	font-size: 28px;	
+	font-size: 28px;
 }
 .nav-custom {
 	padding: 0em 0em 0em 1.5em !important;
-	background-color: #01313b !important;
+	background-color: rgba(19, 36, 94, 1) !important;
+	//align-items: center;
 	.nav-item {
 		color: white !important;
 	}
@@ -15,17 +17,23 @@
 		border-radius: 0 !important
 	}
 	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-		background-color: #00a785 !important;
+		background-color: #424F7E !important;
 	}
 	a {
 		color: #ffffff !important;
 		padding: 0.9375em 1.125em !important;
-		font-weight: 550 !important;
+		font-weight: bold !important;
 	}
 	li{
-		border: 0.2px solid #012C35 ;
+		border-right: 0.2px solid #353C55 ;
+	}
+	.last-item {
+		border-right: none ;
 	}
 	.nav-padding {
 		padding-left: 1.5em;
+	}
+	.nav-link:hover {
+		background-color: #424F7E !important;
 	}
 }
