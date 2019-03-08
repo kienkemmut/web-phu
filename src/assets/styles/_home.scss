@@ -1,0 +1,136 @@
+.content-box {
+  padding: 3em 10em 0 10em;
+  text-align: center;
+  .title-box {
+    color: #2d83fc;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  .image-line {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 2vh;
+    align-items: center;
+    background-image: url("../images/line.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .text-1 {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .text-2 {
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+  }
+  .box-details-1 {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // padding: 1.5em 10em 0 10em;
+    ul{
+      list-style: none;
+      margin-left: 0;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+    li:before {
+      content: "+";
+      padding-right: .3em;
+      font-size: 1.5em;
+      color: #619bf9;
+      font-weight: bold;
+    }
+    .space{
+      width: 10%;
+      height: 10%;
+    }
+    .details-vin{
+        padding: 0;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .chil-box-1{
+      width: 100%;
+      height: 100%;
+      .image-vin-west{
+        display: block;
+        margin-bottom: 2em;
+        width: 100%;
+        height: 16.5625em;
+        background-image: url("../images/vin-west.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    .chil-box-2{
+      width: 100%;
+      height: 100%;
+      .image-vin-gialam{
+        display: block;
+        margin-bottom: 2em;
+        width: 100%;
+        height: 16.5625em;
+        background-image: url("../images/vin-gialam.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .box-details-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    ul{
+      list-style: none;
+      margin-left: 0;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+    li:before {
+      content: "+";
+      padding-right: .3em;
+      font-size: 1.5em;
+      color: #619bf9;
+      font-weight: bold;
+    }
+    .space{
+      width: 20%;
+      height: 20%;
+    }
+    .details-vin{
+        padding: 0;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .chil-box-1{
+      width: 100%;
+      height: 100%;
+      .image-vin-west{
+        display: block;
+        margin-bottom: 2em;
+        width: 100%;
+        height: 16.5625em;
+        background-image: url("../images/vin-west.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    .chil-box-2{
+      width: 100%;
+      height: 100%;
+      .image-vin-gialam{
+        display: block;
+        margin-bottom: 2em;
+        width: 100%;
+        height: 16.5625em;
+        background-image: url("../images/vin-gialam.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

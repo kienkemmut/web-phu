@@ -1,0 +1,157 @@
+.card-header-sidebar {
+	background-color: #01313b !important;
+	color: #ffffff !important;
+}
+.btn-custom {
+	padding: 1em;
+	background-color: #00a785 !important;
+	border-radius: 3px;
+	color: #ffffff !important;
+}
+.content-page-detail {
+	border: 2px dotted red;
+	.text1 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.image-vinhomeswest {
+		padding: 1em;
+		width: 100%;
+		height: 50vh;
+	    background-image: url("../images/vinhomeswest.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+	.text-pr {
+		text-align: left;
+		li {
+			margin-bottom: 1.5em;
+			background: url("../images/icon-vin.png") left no-repeat;
+			padding-left: 2.5em;
+			white-space: normal;
+		}
+		ul{
+	      	list-style: none;
+		    margin-left: 0;
+		    padding-left: 1em;
+	    }
+	}
+	.form-mail {
+		padding: 0 .5em;
+	}
+	.form-mail-custom {
+		padding: 0 1em;
+		background-color: #00a785;
+	}
+	.btn-res {
+		border-radius: 5em;
+		width: 100%;
+		color: #ffffff;
+		background-color: #337967;
+	}
+}
+.card-Custom {
+	position: -webkit-sticky !important; /* Safari */
+	position: sticky !important;
+	top: 4em;
+}
+.content-page-overview {
+	text-align: left;
+	.image-line-overview {
+    display: block;	
+    margin: 0 auto;
+    width: 50%;
+    height: 2vh;
+    align-items: center;
+    background-image: url("../images/line.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	}	
+	.text-overview {
+		font-size: 24px;
+		font-weight: 600;
+		color: #2d8bd0;
+	}
+	.oveview-li {
+		float: left;
+	}
+	.image-vinhom-stay {
+		display: inline-block;
+		width: 100%;
+		height: 50vh;
+	    background-image: url("../images/vin-stay.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+}
+.content-page-design {
+	.image-line-design {
+	    display: block;	
+	    margin: 0 auto;
+	    width: 50%;
+	    height: 2vh;
+	    align-items: center;
+	    background-image: url("../images/line.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+	.text-page-design {
+		font-size: 24px;
+		font-weight: 600;
+		color: #2d8bd0;
+	}
+}
+.page-smart-vinhome {
+	.image-line-smart {
+	    display: block;	
+	    margin: 0 auto;
+	    width: 50%;
+	    height: 2vh;
+	    align-items: center;
+	    background-image: url("../images/line.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+	.text-pr {
+		text-align: left;
+		li {
+			margin-bottom: 1.5em;
+			background: url("../images/icon-vin.png") left no-repeat;
+			padding-left: 2.5em;
+			white-space: normal;
+		}
+		ul{
+	      	list-style: none;
+		    margin-left: 0;
+		    padding-left: 1em;
+	    }
+	}
+	.image-vinhom-stay-1 {
+		display: inline-block;
+		width: 100%;
+		height: 30vh;
+	    background-image: url("../images/vin-stay.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+	.image-vinhomeswest-1 {
+		padding: 1em;
+		width: 100%;
+		height: 20vh;
+	    background-image: url("../images/vinhomeswest.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+}
+.screen-page-pay {
+	.image-line-pay {
+	    display: block;	
+	    margin: 0 auto;
+	    width: 50%;
+	    height: 2vh;
+	    align-items: center;
+	    background-image: url("../images/line.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+}
