@@ -1,0 +1,81 @@
+.screen-posts-details {
+  padding: 1em 10em 0 10em;
+  @include iphone-5s {
+    padding: 2px;
+  }
+  .screen-new-posts-details {
+    .posts-details {
+      @include iphone-5s {
+        padding-right: 2px;
+        padding-left: 17px;
+      }
+    }
+    .images-doi-tac {
+      width: 100%;
+      height: 70vh;
+      background-image: url("../images/san-alfonso-del-mar.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      @include iphone-5s {
+        height: 40vh;
+      }
+    }
+    .title-posts-details {
+      font-weight: bold;
+      border-bottom: 1px solid #A0A7BE;
+      font-size: 24px;
+      padding-bottom: 1em;
+    }
+    .btn-register-posts-details {
+      color: #ffffff;
+      background-color: #2A396E
+    }
+    .sidebar-new-posts {
+      @include iphone-5s {
+        display: none;
+      }
+      .title-sidebar-new-posts {
+        color: #ffffff;
+        background-color: rgba(19, 36, 94, 1);
+        padding: 0.8em;
+        text-align: center;
+        font-weight: bold;
+      }
+      .image-block-sidebar {
+        border: 4px solid #CFD3DE;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/phoi-canh-grand-world-phu-quoc.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      .text-block-sidebar {
+        padding: 0 !important;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+    .sidebar-posts-details {
+      @include iphone-5s {
+        display: none;
+      }
+      position: -webkit-sticky !important; /* Safari */
+      position: sticky !important;
+      top: 4em;
+      color: #ffffff;
+      background-color: rgba(19, 36, 94, 1);
+      padding: 0.8em;
+      .btn-sidebar-new-posts-details {
+        background: #424F7E;
+        color: #ffffff;
+      }
+      .details-new-posts-image {
+        width: 100%;
+        height: 25vh;
+        background-image: url("../images/vin-west.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

@@ -1,10 +1,16 @@
 .content-box {
   padding: 1em 10em 0 10em;
   text-align: center;
+  @include iphone-5s {
+    padding: .5em !important;
+  }
   .title-box {
     color: #54608A;
     font-size: 32px;
     font-weight: bold;
+    @include iphone-5s {
+      font-size: 18px;
+    }
   }
   .image-line {
     display: block;
@@ -19,16 +25,25 @@
   .text-1 {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    @include iphone-5s {
+      margin: 5px;
+    }
   }
   .text-2 {
     margin-top: 1.5em;
     margin-bottom: 3em;
+    @include iphone-5s {
+      margin: 5px;
+    }
   }
   .box-details-1 {
     // display: flex;
     // flex-direction: row;
     // justify-content: center;
     // padding: 1.5em 10em 0 10em;
+    @include iphone-5s {
+      display: block
+    }
     ul{
       list-style: none;
       margin-left: 0;
@@ -47,7 +62,6 @@
       height: 10%;
     }
     .details-vin{
-        padding: 0;
         text-align: left;
     }
     .chil-box-1{
@@ -62,6 +76,9 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
+      @include iphone-5s {
+        padding-right: 0 !important;
+      }
     }
     .chil-box-2{
       width: 100%;
@@ -74,6 +91,10 @@
         background-image: url("../images/vin-gialam.jpg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+      }
+      @include iphone-5s {
+        margin-top: 10px;
+        padding-right: 0 !important;
       }
     }
   }
@@ -100,7 +121,6 @@
       height: 20%;
     }
     .details-vin{
-        padding: 0;
         text-align: left;
     }
     .chil-box-1{
@@ -115,6 +135,9 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
+      @include iphone-5s {
+        padding-right: 0 !important;
+      }
     }
     .chil-box-2{
       width: 100%;
@@ -127,6 +150,10 @@
         background-image: url("../images/vin-gialam.jpg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+      }
+      @include iphone-5s {
+        margin-top: 10px;
+        padding-right: 0 !important;
       }
     }
   }

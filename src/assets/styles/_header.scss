@@ -2,9 +2,15 @@
 	padding: 3em 0em 3.5em 10em !important;
 	background-color: rgba(39, 57, 110, 1);
 	color: #ffffff;
+	@include iphone-5s {
+		padding: 0.8em !important;
+	}
 }
 .logo-app {
 	font-size: 28px;
+	@include iphone-5s {
+		font-size: 12px;
+	}
 }
 .nav-custom {
 	padding: 0em 0em 0em 1.5em !important;
@@ -32,8 +38,15 @@
 	}
 	.nav-padding {
 		padding-left: 1.5em;
+		@include iphone-5s {
+			padding: 0 !important;
+			display: block;
+		}
 	}
 	.nav-link:hover {
 		background-color: #424F7E !important;
+	}
+	@include iphone-5s {
+		padding: 0 !important;
 	}
 }

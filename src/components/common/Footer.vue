@@ -3,7 +3,7 @@
         <div class="mt-4 screen-footer">
             <div class="layer">
                 <div class="row content-footer">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-sm-12">
                         <p style="font-weight: bold; font-size: 20px">Địa chỉ liên hệ</p>
                         <p>DỰ ÁN SUNSHINE CITY</p>
                         <p>Địa chỉ: Khu đô thị Ciputra - Nam Thăng Long, Tây Hồ, Hà Nội</p>
@@ -11,7 +11,7 @@
                         <p>Hotline</p>
                         <p>Điện thoại: 0945505885</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-sm-12">
                         <p style="font-weight: bold; font-size: 20px">Cam kết bán hàng</p>
                         <ul class="footer-commit">
                             <li>Cung cấp những thông tin nhanh chóng & cập nhật nhất từ chủ đầu tư</li>
@@ -22,7 +22,7 @@
                             <li>Cung cấp những thông tin nhanh chóng & cập nhật nhất từ chủ đầu tư</li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-sm-12">
                         <p style="text-align: center; font-weight: bold; font-size: 20px">Nhận báo giá</p>
                         <div class="input-group input-group-lg mb-3">
                             <div class="input-group-prepend">
@@ -42,7 +42,7 @@
                             </div>
                             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
                         </div>
-                        <div style="text-align: center">
+                        <div style="text-align: center" class="mb-2">
                             <button type="button" class="btn btn-register-footer">ĐĂNG KÝ NGAY</button>
                         </div>
 

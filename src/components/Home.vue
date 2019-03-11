@@ -7,7 +7,7 @@
             <p>Tính tới năm 2018, Vingroup đã triển khai 11 dự án bất động sản cao cấp tại Hà Nội và con số này sẽ tiếp tục tăng lên không ngừng trong thời gian tới. VinhomesCorp.vn sẽ cập nhật liên tục thông tin và tư vấn về các dự án của tập đoàn Vingroup giúp quý khách hàng nắm được thông tin tổng quan về dự án cũng như dễ dàng hơn trong việc lựa chọn căn hộ ưng ý cho gia đình.</p>
             <p class="text-2">Các dự án đang mở bán hấp dẫn khách hàng nhất hiện nay</p>
             <div class="row box-details-1">
-                <div class="col-3 chil-box-1">
+                <div class="col-lg-3 col-sm-12 chil-box-1">
                     <div class="image-vin-west" @click="changeDetails()"></div>
                     <h5 style="font-weight: bold;">VINHOMES WEST POINT</h5>
                     <ul class="details-vin">
@@ -17,7 +17,7 @@
                     </ul>
                     <button @click="changeDetails()" type="button" class="btn btn-watch-details">XEM CHI TIẾT</button>
                 </div>
-                <div class="col-3 chil-box-2">
+                <div class="col-lg-3 col-sm-12  chil-box-2">
                     <div class="image-vin-gialam"></div>
                     <h5 style="font-weight: bold;">VINCITY GIA LÂM</h5>
                     <ul class="details-vin">
@@ -27,7 +27,7 @@
                     </ul>
                     <button type="button" class="btn btn-watch-details">XEM CHI TIẾT</button>
                 </div>
-                <div class="col-3 chil-box-2">
+                <div class="col-lg-3 col-sm-12  chil-box-2">
                     <div class="image-vin-gialam"></div>
                     <h5 style="font-weight: bold;">VINCITY GIA LÂM</h5>
                     <ul class="details-vin">
@@ -37,7 +37,7 @@
                     </ul>
                     <button type="button" class="btn btn-watch-details">XEM CHI TIẾT</button>
                 </div>
-                <div class="col-3 chil-box-2">
+                <div class="col-lg-3 col-sm-12  chil-box-2">
                     <div class="image-vin-gialam"></div>
                     <h5 style="font-weight: bold;">VINCITY GIA LÂM</h5>
                     <ul class="details-vin">
@@ -53,7 +53,7 @@
             <p class="title-box">CÁC DỰ ÁN VINHOMES - VINGROUP SẮP MỞ BÁN</p>
             <div class="image-line"></div>
             <div class="row box-details-2">
-                <div class="col-3 chil-box-1">
+                <div class="col-lg-3 col-sm-12 chil-box-1">
                     <div class="image-vin-west" @click="changeDetails()"></div>
                     <h5 style="font-weight: bold;">VINHOMES WEST POINT</h5>
                     <ul class="details-vin">
@@ -63,7 +63,7 @@
                     </ul>
                     <button @click="changeDetails()" type="button" class="btn btn-watch-details">XEM CHI TIẾT</button>
                 </div>
-                <div class="col-3 chil-box-2">
+                <div class="col-lg-3 col-sm-12 chil-box-2">
                     <div class="image-vin-gialam"></div>
                     <h5 style="font-weight: bold;">VINCITY GIA LÂM</h5>
                     <ul class="details-vin">
@@ -73,7 +73,7 @@
                     </ul>
                     <button type="button" class="btn btn-watch-details">XEM CHI TIẾT</button>
                 </div>
-                <div class="col-3 chil-box-2">
+                <div class="col-lg-3 col-sm-12 chil-box-2">
                     <div class="image-vin-gialam"></div>
                     <h5 style="font-weight: bold;">VINCITY GIA LÂM</h5>
                     <ul class="details-vin">
@@ -83,7 +83,7 @@
                     </ul>
                     <button type="button" class="btn btn-watch-details">XEM CHI TIẾT</button>
                 </div>
-                <div class="col-3 chil-box-2">
+                <div class="col-lg-3 col-sm-12 chil-box-2">
                     <div class="image-vin-gialam"></div>
                     <h5 style="font-weight: bold;">VINCITY GIA LÂM</h5>
                     <ul class="details-vin">

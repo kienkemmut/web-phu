@@ -1,11 +1,11 @@
 <template>
   <div>
   	<div class="row mt-2 pl-3">
-  		<div class="col-9">
+  		<div class="col-lg-9 col-sm-12">
 			<div class="content-page-detail">
 				<p class="text1">SUNSINE CTTY - NGHỆ THUẬT SỐNG THƯỢNG LƯU</p>
 				<p class="text1">TUYỆT TÁC MỚI CỦA SUNSINE GROUP</p>
-				<div style="padding: 0em 3em 0em 3em"><div class="image-vinhomeswest mb-2"></div></div>
+				<div class="image-block-vin"><div class="image-vinhomeswest mb-2"></div></div>
 				<p class="text1">TUYỆT TÁC MỚI CỦA SUNSINE GROUP</p>
 				<div class="text-pr">
 					<ul>
@@ -22,16 +22,16 @@
 						<label style="font-weight: bold; font-size: 24px; color: #ffffff">Nhận trọn bộ tài liệu</label>
 						<p style="font-weight: bold; font-size: 20px; color: #fff">Hotline: 0945505885</p>
 						<div class="form-group row">
-							<div class="col-3">
+							<div class="col-lg-3 col-sm-12 mb-1">
 								<input class="form-control" type="text" placeholder="Tên của bạn*" >
 							</div>
-							<div class="col-3">
+							<div class="col-lg-3 col-sm-12 mb-1">
 								<input class="form-control" type="email" placeholder="Email của bạn*">
 							</div>
-							<div class="col-3">
+							<div class="col-lg-3 col-sm-12 mb-1">
 								<input class="form-control" type="tel" placeholder="Số điện thoại*">
 							</div>
-							<div class="col-3 mb-3">
+							<div class="col-lg-3 col-sm-12 mb-3">
 								<button type="button" class="btn btn-register-now">Đăng ký ngay</button>
 							</div>
 						</div>
@@ -104,7 +104,7 @@
 				<div class="image-line-smart mb-3"></div>
 				<p>We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting</p>
 				<div class="row">
-					<div class="col-6">
+					<div class="col-lg-6 col-sm-12">
 						<p>TIỆN ÍCH NỘI KHU</p>
 						<p>e can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little</p>
 						<div class="text-pr">
@@ -118,7 +118,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-lg-6 col-sm-12">
 						<p>TIỆN ÍCH NỘI KHU</p>
 						<p>e can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little</p>
 						<div class="text-pr">
@@ -168,7 +168,7 @@
 				<p class="text-page-pay">GIÁ BÁN VÀ TIẾN ĐỘ THANH TOÁN</p>
 				<div class="image-line-pay"></div>
 				<div class="row">
-					<div class="col-6" style="text-align: left;">
+					<div class="col-lg-6 col-sm-12" style="text-align: left;">
 						<p>Đặt cọc</p>
 						<p>Đợt 1</p>
 						<p>Đợt 2</p>
@@ -179,7 +179,7 @@
 						<p>Đợt 7</p>
 						<p>Đợt 8</p>
 					</div>
-					<div class="col-6" style="text-align: center">
+					<div class="col-lg-6 col-sm-12" style="text-align: center">
 						<h4>Đăng ký miễn phí</h4>
 						<p>Đăng ký ngay để nhận thông tin sớm nhất. Hotline: 0945505885</p>
 						<div class="input-group mb-3">

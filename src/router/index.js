@@ -3,10 +3,12 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Category from '@/components/category/index'
 import Vinhomeswest from '@/components/category/Vinhomeswest'
+import Blog from '@/components/blog/index'
+import Posts from '@/components/blog/Posts'
+import Doitacthicong from '@/components/blog/DoiTacThiCong'
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
   mode: 'history',
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) {
@@ -24,19 +26,54 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'Trang chủ'
+      }
     },
+    {
+      path: '/category',
+      name: 'Category',
+      component: Category,
+      children: [
         {
-        path: '/category',
-        name: 'Category',
-        component: Category,
-        children: [
-            {
-                path: "vinhomeswest",
-                name: "Vinhomeswest",
-                component: Vinhomeswest
-            }
-        ]
+          path: "vinhomeswest",
+          name: "Vinhomeswest",
+          component: Vinhomeswest,
+          meta: {
+            title: 'Vinhomes West'
+          }
+        }
+      ]
+    },
+    {
+      path: '/blog',
+      name: 'Blog',
+      component: Blog,
+      children: [
+        {
+          path: "posts",
+          name: "Posts",
+          component: Posts,
+          meta: {
+            title: 'Tin Tức'
+          },
+        },
+        {
+          path: "posts/doi-tac-thi-cong",
+          name: "Doitacthicong",
+          component: Doitacthicong,
+          meta: {
+            title: 'Đối tác thi công'
+          }
+        }
+      ]
     }
   ]
+
 })
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
+})
+export default router

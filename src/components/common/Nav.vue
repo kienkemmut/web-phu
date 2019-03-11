@@ -22,10 +22,10 @@
                         <a class="nav-link" href="#">GÓC ĐẦU TƯ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TIN TỨC</a>
+                        <router-link class="nav-link" to="/blog/posts">TIN TỨC</router-link>
                     </li>
                     <li class="nav-item last-item">
-                        <a class="nav-link" href="#"><span><font-awesome-icon :icon="['fas', 'phone']" class="icon alt"/></span> HOTLINE 0945505885</a>
+                        <a class="nav-link active" href="#"><span><font-awesome-icon :icon="['fas', 'phone']" class="icon alt"/></span> HOTLINE 0945505885</a>
                     </li>
                 </ul>
             </div>

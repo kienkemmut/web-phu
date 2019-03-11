@@ -1,0 +1,15 @@
+$xss-width: 320px;
+$xs-width: 568px;
+$desktop-width: 1024px;
+
+@mixin iphone-5s {
+  @media (min-width: #{$xss-width}) and (max-width: #{$xs-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

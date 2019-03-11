@@ -16,15 +16,28 @@
 		font-weight: bold;
 		text-align: center;
 		color: #424F7E;
+		@include iphone-5s {
+			font-size: 16px;
+		}
 	}
-	.image-vinhomeswest {
-		padding: 1em;
-		width: 100%;
-		height: 50vh;
-	    background-image: url("../images/vinhomeswest.jpg");
-	    background-size: 100% 100%;
-	    background-repeat: no-repeat;
+	.image-block-vin {
+		padding: 0em 3em 0em 3em;
+		.image-vinhomeswest {
+			padding: 1em;
+			width: 100%;
+			height: 50vh;
+			background-image: url("../images/vinhomeswest.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			@include iphone-5s {
+				height: 30vh;
+			}
+		}
+		@include iphone-5s {
+			padding: 0em .5em 0 .5em !important;
+		}
 	}
+
 	.text-pr {
 		text-align: left;
 		li {
@@ -97,6 +110,9 @@
 	.btn-sidebar-pay:hover {
 		background-color: #9BA2BB
 	}
+	@include iphone-5s {
+		display: none !important;
+	}
 }
 .content-page-overview {
 	text-align: left;
@@ -114,6 +130,9 @@
 		font-size: 24px;
 		font-weight: 600;
 		color: #424F7E;
+		@include iphone-5s {
+			font-size: 18px;
+		}
 	}
 	.oveview-li {
 		float: left;
@@ -125,6 +144,9 @@
 	    background-image: url("../images/vin-stay.jpg");
 	    background-size: 100% 100%;
 	    background-repeat: no-repeat;
+		@include iphone-5s {
+			height: 30vh;
+		}
 	}
 }
 .content-page-design {
@@ -143,6 +165,9 @@
 		font-weight: 600;
 		color: #424F7E;
 		text-align: center;
+		@include iphone-5s {
+			font-size: 18px;
+		}
 	}
 }
 .page-smart-vinhome {
@@ -199,6 +224,9 @@
 		font-weight: 600;
 		color: #424F7E;
 		text-align: center;
+		@include iphone-5s {
+			font-size: 18px;
+		}
 	}
 }
 .screen-page-pay {
