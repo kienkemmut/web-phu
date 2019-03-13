@@ -1,7 +1,7 @@
 <template>
   <div>
   	<div class="row mt-2 pl-3">
-  		<div class="col-lg-9 col-sm-12">
+  		<div class="col-lg-9 col-sm-12 content-page-padding">
 			<div class="content-page-detail">
 				<p class="text1">SUNSINE CTTY - NGHỆ THUẬT SỐNG THƯỢNG LƯU</p>
 				<p class="text1">TUYỆT TÁC MỚI CỦA SUNSINE GROUP</p>
@@ -104,7 +104,7 @@
 				<div class="image-line-smart mb-3"></div>
 				<p>We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting</p>
 				<div class="row">
-					<div class="col-lg-6 col-sm-12">
+					<div class="col-lg-6 col-sm-12 div-smart-padding-mobile">
 						<p>TIỆN ÍCH NỘI KHU</p>
 						<p>e can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little</p>
 						<div class="text-pr">
@@ -118,7 +118,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-6 col-sm-12">
+					<div class="col-lg-6 col-sm-12 div-smart-padding-mobile">
 						<p>TIỆN ÍCH NỘI KHU</p>
 						<p>e can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little</p>
 						<div class="text-pr">
@@ -134,32 +134,32 @@
 					</div>
 				</div>
 				<div class="row mb-2">
-					<div class="col-6">
+					<div class="col-6 div-image-transition">
 						<div class="image-vinhom-stay-1"></div>
 					</div>
-					<div class="col-6">
+					<div class="col-6 div-image-transition">
 						<div class="image-vinhom-stay-1"></div>
 					</div>
 				</div>
 				<div class="row mb-3">
-					<div class="col-4">
+					<div class="col-4 div-image-transition">
 						<div class="image-vinhomeswest-1"></div>
 					</div>
-					<div class="col-4">
+					<div class="col-4 div-image-transition">
 						<div class="image-vinhomeswest-1"></div>
 					</div>
-					<div class="col-4">
+					<div class="col-4 div-image-transition">
 						<div class="image-vinhomeswest-1"></div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-4">
+					<div class="col-4 div-image-transition">
 						<div class="image-vinhomeswest-1"></div>
 					</div>
-					<div class="col-4">
+					<div class="col-4 div-image-transition">
 						<div class="image-vinhomeswest-1"></div>
 					</div>
-					<div class="col-4">
+					<div class="col-4 div-image-transition">
 						<div class="image-vinhomeswest-1"></div>
 					</div>
 				</div>
@@ -168,7 +168,7 @@
 				<p class="text-page-pay">GIÁ BÁN VÀ TIẾN ĐỘ THANH TOÁN</p>
 				<div class="image-line-pay"></div>
 				<div class="row">
-					<div class="col-lg-6 col-sm-12" style="text-align: left;">
+					<div class="col-lg-6 col-sm-12 div-padding-tablets" style="text-align: left;">
 						<p>Đặt cọc</p>
 						<p>Đợt 1</p>
 						<p>Đợt 2</p>
@@ -179,7 +179,7 @@
 						<p>Đợt 7</p>
 						<p>Đợt 8</p>
 					</div>
-					<div class="col-lg-6 col-sm-12" style="text-align: center">
+					<div class="col-lg-6 col-sm-12 div-padding-tablets" style="text-align: center">
 						<h4>Đăng ký miễn phí</h4>
 						<p>Đăng ký ngay để nhận thông tin sớm nhất. Hotline: 0945505885</p>
 						<div class="input-group mb-3">
@@ -242,5 +242,8 @@ export default {
       scrollOffset: -window.innerWidth * 0.035
     }
   },
+  created: function () {
+    // console.log(window.innerWidth,this.scrollOffset, 'window width')
+  }
 }
 </script>

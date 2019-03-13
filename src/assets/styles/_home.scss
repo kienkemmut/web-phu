@@ -1,15 +1,39 @@
 .content-box {
   padding: 1em 10em 0 10em;
   text-align: center;
-  @include iphone-5s {
+  @include mobile {
     padding: .5em !important;
+  }
+  @include tablets {
+    padding: 0em !important;
+  }
+  @include tablets-pro {
+    padding: 0em !important;
+  }
+  @include mobile-horizontal {
+    padding: 0em !important;
+  }
+  @include mobile-horizontal-lg {
+    padding: 0 !important;
+  }
+  @include tablets-horizontal {
+    padding: 0em !important;
   }
   .title-box {
     color: #54608A;
     font-size: 32px;
     font-weight: bold;
-    @include iphone-5s {
+    @include mobile {
       font-size: 18px;
+    }
+    @include tablets {
+      font-size: 28px;
+    }
+    @include mobile-horizontal {
+      font-size: 24px;
+    }
+    @include mobile-horizontal-lg {
+      font-size: 26px;
     }
   }
   .image-line {
@@ -25,15 +49,45 @@
   .text-1 {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    @include iphone-5s {
+    @include mobile {
       margin: 5px;
+    }
+    @include tablets {
+      margin: 5px;
+    }
+    @include tablets-pro {
+      margin: 10px;
+    }
+    @include mobile-horizontal {
+      margin: 5px;
+    }
+    @include mobile-horizontal-lg {
+      margin: 5px;
+    }
+    @include tablets-horizontal {
+      margin: 10px;
     }
   }
   .text-2 {
     margin-top: 1.5em;
     margin-bottom: 3em;
-    @include iphone-5s {
+    @include mobile {
       margin: 5px;
+    }
+    @include tablets {
+      margin: 5px;
+    }
+    @include tablets-pro {
+      margin: 10px;
+    }
+    @include mobile-horizontal {
+      margin: 5px;
+    }
+    @include mobile-horizontal-lg {
+      margin: 5px;
+    }
+    @include tablets-horizontal {
+      margin: 10px;
     }
   }
   .box-details-1 {
@@ -41,8 +95,18 @@
     // flex-direction: row;
     // justify-content: center;
     // padding: 1.5em 10em 0 10em;
-    @include iphone-5s {
+    @include mobile {
       display: block
+    }
+    @include tablets {
+      display: block;
+      margin-left: 0px !important;
+    }
+    @include tablets-pro {
+      margin-left: 0px;
+    }
+    @include tablets-horizontal {
+      margin-left: 0px;
     }
     ul{
       list-style: none;
@@ -75,8 +139,29 @@
         background-image: url("../images/vin-west.jpg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        @include tablets {
+          margin-bottom: 1em;
+        }
+        @include tablets-pro {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal-lg {
+          margin-bottom: 1em;
+        }
+        @include tablets-horizontal {
+          margin-bottom: 1em;
+        }
       }
-      @include iphone-5s {
+      @include mobile {
+        padding-right: 0 !important;
+      }
+      @include mobile-horizontal {
+        padding-right: 0 !important;
+      }
+      @include mobile-horizontal-lg {
         padding-right: 0 !important;
       }
     }
@@ -91,8 +176,34 @@
         background-image: url("../images/vin-gialam.jpg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        @include tablets {
+          margin-bottom: 1em;
+        }
+        @include tablets-pro {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal-lg {
+          margin-bottom: 1em;
+        }
+        @include tablets-horizontal {
+          margin-bottom: 1em;
+        }
       }
-      @include iphone-5s {
+      @include mobile {
+        margin-top: 10px;
+        padding-right: 0 !important;
+      }
+      @include tablets {
+        margin-top: 10px;
+      }
+      @include mobile-horizontal {
+        margin-top: 10px;
+        padding-right: 0 !important;
+      }
+      @include mobile-horizontal-lg {
         margin-top: 10px;
         padding-right: 0 !important;
       }
@@ -103,6 +214,17 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 2em;
+    @include tablets {
+      margin-top: 1em;
+    }
+    @include tablets-pro {
+      margin-left: 0px;
+      margin-top: 1em;
+    }
+    @include tablets-horizontal {
+      margin-left: 0px;
+      margin-top: 1em;
+    }
     ul{
       list-style: none;
       margin-left: 0;
@@ -134,8 +256,32 @@
         background-image: url("../images/vin-west.jpg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        @include tablets {
+          margin-bottom: 1em;
+        }
+        @include tablets-pro {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal-lg {
+          margin-bottom: 1em;
+        }
+        @include tablets-horizontal {
+          margin-bottom: 1em;
+        }
       }
-      @include iphone-5s {
+      @include mobile {
+        padding-right: 0 !important;
+      }
+      @include tablets {
+        padding-left: 30px !important;
+      }
+      @include mobile-horizontal {
+        padding-right: 0 !important;
+      }
+      @include mobile-horizontal-lg {
         padding-right: 0 !important;
       }
     }
@@ -150,8 +296,38 @@
         background-image: url("../images/vin-gialam.jpg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        @include tablets {
+          margin-bottom: 1em;
+        }
+        @include tablets-pro {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal {
+          margin-bottom: 1em;
+        }
+        @include mobile-horizontal-lg {
+          margin-bottom: 1em;
+        }
+        @include tablets-horizontal {
+          margin-bottom: 1em;
+        }
+        @include tablets-horizontal {
+          margin-bottom: 1em;
+        }
       }
-      @include iphone-5s {
+      @include mobile {
+        margin-top: 10px;
+        padding-right: 0 !important;
+      }
+      @include tablets {
+        margin-top: 10px;
+        padding-left: 30px !important;
+      }
+      @include mobile-horizontal {
+        margin-top: 10px;
+        padding-right: 0 !important;
+      }
+      @include mobile-horizontal-lg {
         margin-top: 10px;
         padding-right: 0 !important;
       }

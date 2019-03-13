@@ -1,8 +1,23 @@
 .screen-posts {
   font-size: 16px !important;
   padding: 0em 10em 0 10em;
-  @include iphone-5s {
+  @include mobile {
     padding: 0em;
+  }
+  @include tablets {
+    padding: 0em;
+  }
+  @include tablets-pro {
+    padding: 1em;
+  }
+  @include mobile-horizontal {
+    padding: 1em;
+  }
+  @include mobile-horizontal-lg {
+    padding: 1em;
+  }
+  @include tablets-horizontal {
+    padding: 1em;
   }
   .screen-new-posts {
     .block-new-posts {
@@ -13,18 +28,39 @@
           background-image: url("../images/vincity-ocean-park-new-posts.jpg");
           background-size: 100% 100%;
           background-repeat: no-repeat;
-          @include iphone-5s {
+          @include mobile {
             height: 30vh;
+          }
+          @include tablets {
+            height: 30vh;
+          }
+          @include mobile-horizontal {
+            height: 50vh;
+          }
+          @include mobile-horizontal-lg {
+            height: 50vh;
           }
         }
         .div-res-image {
-          @include iphone-5s {
+          @include mobile {
             padding-right: 2px;
             padding-left: 17px;
           }
+          @include tablets {
+            padding-right: 2px;
+            padding-left: 30px;
+          }
+          @include mobile-horizontal {
+            padding-right: 2px;
+            padding-left: 30px;
+          }
+          @include mobile-horizontal-lg {
+            padding-right: 2px;
+            padding-left: 30px;
+          }
         }
       }
-      @include iphone-5s {
+      @include mobile {
         padding-right: 0;
       }
     }
@@ -48,8 +84,23 @@
         background-image: url("../images/vin-west.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        @include tablets-pro {
+          height: 15vh;
+        }
+        @include tablets-horizontal {
+          height: 20vh;
+        }
       }
-      @include iphone-5s {
+      @include mobile {
+        display: none;
+      }
+      @include tablets {
+        display: none;
+      }
+      @include mobile-horizontal {
+        display: none;
+      }
+      @include mobile-horizontal-lg {
         display: none;
       }
     }

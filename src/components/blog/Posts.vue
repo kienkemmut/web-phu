@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-9 col-sm-12 block-new-posts">
                     <div class="row block-1 mb-3">
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <div class="posts-image-1"></div>
                         </div>
                         <div class="col-lg-6 col-sm-12 div-res-image">
@@ -16,10 +16,10 @@
                         </div>
                     </div>
                     <div class="row block-1 mb-3">
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <div class="posts-image-1"></div>
                         </div>
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <p style="font-weight: bold">Đối tác thi công biển hồ nước mặn tại Vincity Ocean Park “khủng” cỡ nào?</p>
                             <p>Theo thông tin Vingroup mới hé lộ, dự án biển hồ nước mặn rộng 6.1 ha tại khu đô thị Vincity Ocean Park Gia Lâm sẽ do đơn vị Crystal Lagoons triển khai thi công xây dựng. Liệu Crystal …</p>
                             <a>Xem chi tiết</a>
@@ -27,10 +27,10 @@
                         </div>
                     </div>
                     <div class="row block-1 mb-3">
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <div class="posts-image-1"></div>
                         </div>
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <p style="font-weight: bold">Đối tác thi công biển hồ nước mặn tại Vincity Ocean Park “khủng” cỡ nào?</p>
                             <p>Theo thông tin Vingroup mới hé lộ, dự án biển hồ nước mặn rộng 6.1 ha tại khu đô thị Vincity Ocean Park Gia Lâm sẽ do đơn vị Crystal Lagoons triển khai thi công xây dựng. Liệu Crystal …</p>
                             <a>Xem chi tiết</a>
@@ -38,10 +38,10 @@
                         </div>
                     </div>
                     <div class="row block-1 mb-3">
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <div class="posts-image-1"></div>
                         </div>
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <p style="font-weight: bold">Đối tác thi công biển hồ nước mặn tại Vincity Ocean Park “khủng” cỡ nào?</p>
                             <p>Theo thông tin Vingroup mới hé lộ, dự án biển hồ nước mặn rộng 6.1 ha tại khu đô thị Vincity Ocean Park Gia Lâm sẽ do đơn vị Crystal Lagoons triển khai thi công xây dựng. Liệu Crystal …</p>
                             <a>Xem chi tiết</a>
@@ -49,10 +49,10 @@
                         </div>
                     </div>
                     <div class="row block-1 mb-3">
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <div class="posts-image-1"></div>
                         </div>
-                        <div class="col-lg-6 col-sm-12 div-res-image">
+                        <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
                             <p style="font-weight: bold">Đối tác thi công biển hồ nước mặn tại Vincity Ocean Park “khủng” cỡ nào?</p>
                             <p>Theo thông tin Vingroup mới hé lộ, dự án biển hồ nước mặn rộng 6.1 ha tại khu đô thị Vincity Ocean Park Gia Lâm sẽ do đơn vị Crystal Lagoons triển khai thi công xây dựng. Liệu Crystal …</p>
                             <a>Xem chi tiết</a>

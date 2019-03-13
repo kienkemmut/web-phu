@@ -1,15 +1,75 @@
-$xss-width: 320px;
-$xs-width: 568px;
-$desktop-width: 1024px;
+$xss-phone-width: 320px;
+$xs-phone-width: 768px;
 
-@mixin iphone-5s {
-  @media (min-width: #{$xss-width}) and (max-width: #{$xs-width - 1px}) {
+$phone-width-horizontal: 640px;
+$phone-width-horizontal-xs: 667px;
+$phone-width-horizontal-md: 731px;
+$phone-width-horizontal-mdd: 736px;
+
+$phone-height-horizontal-xs: 360px;
+$phone-height-horizontal-lg: 414px;
+
+$phone-width-horizontal-lg: 812px;
+$phone-width-horizontal-lgg: 823px;
+$phone-height-horizontal-lg-1: 375px;
+$phone-height-horizontal-lgg-1: 411px;
+
+$tablets-width: 768px;
+$tablets-height: 1024px;
+$tablets-pro-width: 1024px;
+$tablets-pro-height: 1366px;
+
+@mixin mobile {
+  @media (min-width: #{$xss-phone-width})
+  and (max-width: #{$xs-phone-width - 1px}) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
+@mixin tablets {
+  @media (min-width: #{$tablets-width})
+  and (max-width: #{$tablets-pro-width - 1px}) {
+    @content;
+  }
+}
+@mixin tablets-horizontal {
+  @media (min-width: #{$tablets-pro-width})
+  and (max-width: #{$tablets-pro-width})
+  and (min-height: #{$tablets-width})
+  and (max-height: #{$tablets-width}) {
+    @content;
+  }
+}
+
+@mixin tablets-pro {
+  @media (min-device-width: #{$tablets-pro-width})
+  and (max-device-width: #{$tablets-pro-width})
+  and (min-device-height: #{$tablets-pro-height})
+  and (max-device-height: #{$tablets-pro-height})
+  and (min-width: #{$tablets-pro-width})
+  and (max-width: #{$tablets-pro-width}){
+    @content;
+  }
+}
+
+@mixin mobile-horizontal {
+  @media (min-device-width: #{$phone-width-horizontal})
+  and (max-device-width: #{$phone-width-horizontal-mdd})
+  and (min-device-height: #{$phone-height-horizontal-xs})
+  and (max-device-height: #{$phone-height-horizontal-lg})
+  and (min-width: #{$phone-width-horizontal})
+  and (max-width: #{$phone-width-horizontal-mdd}){
+    @content;
+  }
+}
+
+@mixin mobile-horizontal-lg {
+  @media (min-device-width: #{$phone-width-horizontal-lg})
+  and (max-device-width: #{$phone-width-horizontal-lgg})
+  and (min-device-height: #{$phone-height-horizontal-lg-1})
+  and (max-device-height: #{$phone-height-horizontal-lgg-1})
+  and (min-width: #{$phone-width-horizontal-lg})
+  and (max-width: #{$phone-width-horizontal-lgg}){
     @content;
   }
 }

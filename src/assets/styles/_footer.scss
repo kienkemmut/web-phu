@@ -16,15 +16,44 @@
   color: #F4F4F5;
   .content-footer {
     padding: 1em 8em 0 8em;
-    @include iphone-5s {
+    @include mobile {
       padding-right: 2px;
       padding-left: 17px;
+    }
+    @include tablets {
+      padding-right: 2px;
+      padding-left: 30px;
+    }
+    @include tablets-pro {
+      padding-right: 2px;
+      padding-left: 30px;
+    }
+    @include mobile-horizontal {
+      padding-right: 2px;
+      padding-left: 30px;
+    }
+    @include mobile-horizontal-lg {
+      padding-right: 2px;
+      padding-left: 30px;
+    }
+    @include tablets-horizontal {
+      padding-right: 2px;
+      padding-left: 30px;
     }
   }
   .footer-commit {
     padding: 0;
-    @include iphone-5s {
+    @include mobile {
       padding: 1em;
+    }
+    @include tablets {
+      padding-left: 2em;
+    }
+    @include mobile-horizontal {
+      padding-left: 2em;
+    }
+    @include mobile-horizontal-lg {
+      padding-left: 2em;
     }
   }
   .btn-register-footer {
@@ -57,7 +86,19 @@
   cursor: pointer;
   padding: .5em 1.5em .5em 1.5em;
   border-radius: 4px;
-  @include iphone-5s {
+  @include mobile {
+    display: none;
+  }
+  @include tablets {
+    display: none;
+  }
+  @include mobile-horizontal {
+    display: none;
+  }
+  @include mobile-horizontal-lg {
+    display: none;
+  }
+  @include tablets-horizontal {
     display: none;
   }
 }
@@ -75,7 +116,30 @@
   cursor: pointer;
   padding: .5em 1.5em .5em 1.5em;
   border-radius: 4px;
-  @include iphone-5s {
+  @include mobile {
     display: none;
   }
+  @include mobile-horizontal {
+    display: none;
+  }
+  @include mobile-horizontal-lg {
+    display: none;
+  }
+}
+.btn-register-modal-footer {
+  color: #424F7E !important;
+  border-radius: 100px;
+  border-color: #424F7E !important;
+}
+.btn-register-modal-footer:hover {
+  color: #ffffff !important;
+  background-color: #424F7E !important;
+}
+.btn-register-modal-footer:focus {
+  border: none !important;
+  color: #ffffff !important;
+  background-color: #424F7E !important;
+}
+.modal-body {
+  padding-bottom: 0 !important;
 }

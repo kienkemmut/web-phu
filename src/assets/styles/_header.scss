@@ -2,14 +2,38 @@
 	padding: 3em 0em 3.5em 10em !important;
 	background-color: rgba(39, 57, 110, 1);
 	color: #ffffff;
-	@include iphone-5s {
+	@include mobile {
 		padding: 0.8em !important;
+	}
+	@include tablets {
+		padding: 1.5em 0em 2em 5em !important;
+	}
+	@include tablets-pro {
+		padding: 1.5em 0em 2em 2.5em !important;
+	}
+	@include mobile-horizontal {
+		padding: .5em 0em 1em 2em !important;
+	}
+	@include mobile-horizontal-lg {
+		padding: .5em 0em 1em 2em !important;
+	}
+	@include tablets-horizontal {
+		padding: 1.5em 0em 2em 2.5em !important;
 	}
 }
 .logo-app {
 	font-size: 28px;
-	@include iphone-5s {
+	@include mobile {
 		font-size: 12px;
+	}
+	@include tablets {
+		font-size: 20px;
+	}
+	@include mobile-horizontal {
+		font-size: 20px;
+	}
+	@include mobile-horizontal-lg {
+		font-size: 20px;
 	}
 }
 .nav-custom {
@@ -38,15 +62,50 @@
 	}
 	.nav-padding {
 		padding-left: 1.5em;
-		@include iphone-5s {
+		@include mobile {
 			padding: 0 !important;
 			display: block;
+		}
+		@include tablets {
+			padding: 0 !important;
+			display: block;
+		}
+		@include tablets-pro {
+			padding: 0 !important;
+		}
+		@include mobile-horizontal {
+			padding: 0 !important;
+			display: block;
+		}
+		@include mobile-horizontal-lg {
+			padding: 0 !important;
+			display: block;
+		}
+		@include tablets-horizontal {
+			padding: 0 !important;
 		}
 	}
 	.nav-link:hover {
 		background-color: #424F7E !important;
 	}
-	@include iphone-5s {
+	@include mobile {
 		padding: 0 !important;
 	}
+	@include tablets {
+		padding: 0 !important;
+	}
+	@include mobile-horizontal {
+		padding: 0 !important;
+	}
+	@include mobile-horizontal-lg {
+		padding: 0 !important;
+	}
+	//.router-link-active {
+	//	cursor: pointer;
+	//	background-color: #424F7E;
+	//}
+	//.exact-active {
+	//	background-color: #424F7E;
+	//}
+
 }

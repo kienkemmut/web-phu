@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import jQuery from 'jquery'
 import './assets/styles/main.scss'
 import store from './store'
 import 'bootstrap'
@@ -17,6 +18,8 @@ import { faUser, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 var VueScrollTo = require('vue-scrollto');
 library.add(faComment, faUser, faPhone, faEnvelope)
 
+global.jQuery = jQuery
+global.$ = jQuery
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 Vue.use(VueRouterMultiView)

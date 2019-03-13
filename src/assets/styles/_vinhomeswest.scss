@@ -16,7 +16,7 @@
 		font-weight: bold;
 		text-align: center;
 		color: #424F7E;
-		@include iphone-5s {
+		@include mobile {
 			font-size: 16px;
 		}
 	}
@@ -29,11 +29,11 @@
 			background-image: url("../images/vinhomeswest.jpg");
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
-			@include iphone-5s {
+			@include mobile {
 				height: 30vh;
 			}
 		}
-		@include iphone-5s {
+		@include mobile {
 			padding: 0em .5em 0 .5em !important;
 		}
 	}
@@ -45,6 +45,9 @@
 			background: url("../images/icon-vin.png") left no-repeat;
 			padding-left: 2.5em;
 			white-space: normal;
+			@include mobile {
+				margin-bottom: 0.3em;
+			}
 		}
 		ul{
 	      	list-style: none;
@@ -110,7 +113,16 @@
 	.btn-sidebar-pay:hover {
 		background-color: #9BA2BB
 	}
-	@include iphone-5s {
+	@include mobile {
+		display: none !important;
+	}
+	@include tablets {
+		display: none !important;
+	}
+	@include mobile-horizontal {
+		display: none !important;
+	}
+	@include mobile-horizontal-lg {
 		display: none !important;
 	}
 }
@@ -130,7 +142,7 @@
 		font-size: 24px;
 		font-weight: 600;
 		color: #424F7E;
-		@include iphone-5s {
+		@include mobile {
 			font-size: 18px;
 		}
 	}
@@ -144,7 +156,7 @@
 	    background-image: url("../images/vin-stay.jpg");
 	    background-size: 100% 100%;
 	    background-repeat: no-repeat;
-		@include iphone-5s {
+		@include mobile {
 			height: 30vh;
 		}
 	}
@@ -165,12 +177,40 @@
 		font-weight: 600;
 		color: #424F7E;
 		text-align: center;
-		@include iphone-5s {
+		@include mobile {
 			font-size: 18px;
 		}
 	}
 }
 .page-smart-vinhome {
+	.div-image-transition {
+		@include mobile {
+			padding-right: 0;
+		}
+		@include tablets {
+			padding-right: 0;
+		}
+		@include mobile-horizontal {
+			padding-right: 0;
+		}
+		@include mobile-horizontal-lg {
+			padding-right: 0;
+		}
+	}
+	.div-smart-padding-mobile{
+		@include mobile {
+			padding-left: 15px;
+		}
+		@include tablets {
+			padding-right: 0px;
+		}
+		@include mobile-horizontal {
+			padding-right: 0px;
+		}
+		@include mobile-horizontal-lg {
+			padding-right: 0px;
+		}
+	}
 	.image-line-smart {
 	    display: block;	
 	    margin: 0 auto;
@@ -188,6 +228,9 @@
 			background: url("../images/icon-vin.png") left no-repeat;
 			padding-left: 2.5em;
 			white-space: normal;
+			@include mobile {
+				margin-bottom: 0.3em;
+			}
 		}
 		ul{
 	      	list-style: none;
@@ -203,6 +246,15 @@
 	    background-size: 100% 100%;
 	    background-repeat: no-repeat;
 		transition: all .5s ease-in-out;
+		@include mobile {
+			height: 20vh;
+		}
+		@include tablets {
+			height: 25vh;
+		}
+		@include tablets-pro {
+			height: 25vh;
+		}
 	}
 	.image-vinhom-stay-1:hover {
 		transform: scale(1.05);
@@ -215,6 +267,15 @@
 	    background-size: 100% 100%;
 	    background-repeat: no-repeat;
 		transition: all .5s ease-in-out;
+		@include mobile {
+			height: 15vh;
+		}
+		@include tablets {
+			height: 18vh;
+		}
+		@include tablets-pro {
+			height: 18vh;
+		}
 	}
 	.image-vinhomeswest-1:hover {
 		transform: scale(1.05);
@@ -224,12 +285,26 @@
 		font-weight: 600;
 		color: #424F7E;
 		text-align: center;
-		@include iphone-5s {
+		@include mobile {
 			font-size: 18px;
 		}
 	}
 }
 .screen-page-pay {
+	.div-padding-tablets {
+		@include tablets {
+			padding-right: 0;
+		}
+		@include mobile {
+			padding-right: 0;
+		}
+		@include mobile-horizontal {
+			padding-right: 0px;
+		}
+		@include mobile-horizontal-lg {
+			padding-right: 0px;
+		}
+	}
 	.image-line-pay {
 	    display: block;	
 	    margin: 0 auto;
@@ -250,5 +325,11 @@
 		border-radius: 5em;
 		color: #ffffff;
 		background-color: #2A396E !important
+	}
+}
+.content-page-padding {
+	@include mobile {
+		padding-right: 5px !important;
+		padding-left: 5px !important;
 	}
 }

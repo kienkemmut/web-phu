@@ -45,7 +45,6 @@
                         <div style="text-align: center" class="mb-2">
                             <button type="button" class="btn btn-register-footer">ĐĂNG KÝ NGAY</button>
                         </div>
-
                     </div>
                 </div>
             </div>
