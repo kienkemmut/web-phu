@@ -1,7 +1,7 @@
 // import * as types from '../mutation-types'
-import Vue from 'vue'
-import router from '../../router'
-let qs = require('qs')
+// import Vue from 'vue'
+// import router from '../../router'
+// let qs = require('qs')
 
 
 const state = {

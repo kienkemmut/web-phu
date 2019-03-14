@@ -15,7 +15,7 @@
                 </div>
                 <p>Tại Việt Nam, Vingroup là tập đoàn đầu tiên dám “mạnh tay” chi một khoản tiền cực khủng để “đưa biển hồ vào thành phố” nhằm hiện thực hóa ước mơ sống gần biển tới những người dân luôn phải bộn bề công việc giữa chốn thủ đô đông đúc & ồn ào.</p>
                 <p>Song song với khu biển hồ nước mặn rộng lên tới 6.1 ha, Vingroup còn triển khai thêm hồ điều hòa rộng lên tới 24.5 ha ngay trung tâm khu đô thị cùng hệ thống công viên cây xanh rộng lên tới 62 ha xen kẽ bên dưới mỗi tòa tháp căn hộ, qua đó mở ra một không gian sống xanh dương độc nhất vô nhị trong Hà Nội.</p>
-                <div style="border: 1px solid #A0A7BE; padding: 1em">
+                <form style="border: 1px solid #A0A7BE; padding: 1em" action="https://jumprock.co/mail/kienkem" method="post">
                     <h4>Đăng ký miễn phí</h4>
                     <p>Đăng ký ngay để nhận thông tin sớm nhất. Hotline: 0945505885</p>
                     <div class="input-group mb-3">
@@ -37,8 +37,9 @@
                         <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
                     </div>
                     <button type="submit" class="btn btn-register-posts-details">ĐĂNG KÝ NGAY</button>
+                    <input type="hidden" name="after" value="http://localhost:8080/category/notification">
                     <h3 class="mt-4" style="color: #424F7E">Hotline 0945505885</h3>
-                </div>
+                </form>
             </div>
             <div class="col-3">
                 <div class="sidebar-new-posts">

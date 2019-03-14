@@ -10,29 +10,30 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="col-12">
+                        <form class="col-12" action="https://jumprock.co/mail/kienkem" method="post">
                             <div class="input-group input-group-lg mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><font-awesome-icon :icon="['fas', 'user']" :style="{color: '#424F7E'}" class="icon alt"/></span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Họ và tên*">
+                                <input type="text" name="name" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Họ và tên*">
                             </div>
                             <div class="input-group input-group-lg mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><font-awesome-icon :icon="['fas', 'phone']" :style="{color: '#424F7E'}" class="icon alt"/></span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Số điện thoại*">
+                                <input type="text" name="phone" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Số điện thoại*">
                             </div>
                             <div class="input-group input-group-lg mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><font-awesome-icon :icon="['fas', 'envelope']" :style="{color: '#424F7E'}" class="icon alt"/></span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
+                                <input type="text" name="email" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
                             </div>
-                        </div>
-                    </div>
-                    <div class="mb-3" style="text-align: center">
-                        <button type="button" class="btn btn-register-modal-footer">ĐĂNG KÝ NGAY</button>
+                            <div class="mb-3" style="text-align: center">
+                                <button type="submit" class="btn btn-register-modal-footer">ĐĂNG KÝ NGAY</button>
+                                <input type="hidden" name="after" value="http://localhost:8080/category/notification">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

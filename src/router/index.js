@@ -6,6 +6,7 @@ import Vinhomeswest from '@/components/category/Vinhomeswest'
 import Blog from '@/components/blog/index'
 import Posts from '@/components/blog/Posts'
 import Doitacthicong from '@/components/blog/DoiTacThiCong'
+import Notification from '@/components/common/PageNotification'
 
 Vue.use(Router)
 const router = new Router({
@@ -36,6 +37,14 @@ const router = new Router({
       name: 'Category',
       component: Category,
       children: [
+        {
+          path: "notification",
+          name: "Notification",
+          component: Notification,
+          meta: {
+            title: 'Thông báo'
+          }
+        },
         {
           path: "vinhomeswest",
           name: "Vinhomeswest",

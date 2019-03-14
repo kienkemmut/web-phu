@@ -17,22 +17,32 @@
 						<li>We can also style lists with colors, to make them look a little more interesting.</li>
 					</ul>
 				</div>
-				<form class="form-mail">
+				<form class="form-mail" action="https://jumprock.co/mail/kienkem" method="post">
 					<div class="form-group form-mail-custom">
 						<label style="font-weight: bold; font-size: 24px; color: #ffffff">Nhận trọn bộ tài liệu</label>
 						<p style="font-weight: bold; font-size: 20px; color: #fff">Hotline: 0945505885</p>
 						<div class="form-group row">
-							<div class="col-lg-3 col-sm-12 mb-1">
-								<input class="form-control" type="text" placeholder="Tên của bạn*" >
+							<div class="input-group col-lg-3 col-sm-12 mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><font-awesome-icon :icon="['fas', 'user']" :style="{color: '#424F7E'}" class="icon alt"/></span>
+								</div>
+								<input type="text" name="name" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Họ và tên*">
 							</div>
-							<div class="col-lg-3 col-sm-12 mb-1">
-								<input class="form-control" type="email" placeholder="Email của bạn*">
+							<div class="input-group col-lg-3 col-sm-12 mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><font-awesome-icon :icon="['fas', 'phone']" :style="{color: '#424F7E'}" class="icon alt"/></span>
+								</div>
+								<input type="text" name="phone" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Số điện thoại*">
 							</div>
-							<div class="col-lg-3 col-sm-12 mb-1">
-								<input class="form-control" type="tel" placeholder="Số điện thoại*">
+							<div class="input-group col-lg-3 col-sm-12 mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><font-awesome-icon :icon="['fas', 'envelope']" :style="{color: '#424F7E'}" class="icon alt"/></span>
+								</div>
+								<input type="email" name="email" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
 							</div>
 							<div class="col-lg-3 col-sm-12 mb-3">
-								<button type="button" class="btn btn-register-now">Đăng ký ngay</button>
+								<button type="submit" class="btn btn-register-now">Đăng ký ngay</button>
+								<input type="hidden" name="after" value="http://localhost:8080/category/notification">
 							</div>
 						</div>
 					</div>
@@ -179,7 +189,7 @@
 						<p>Đợt 7</p>
 						<p>Đợt 8</p>
 					</div>
-					<div class="col-lg-6 col-sm-12 div-padding-tablets" style="text-align: center">
+					<form class="col-lg-6 col-sm-12 div-padding-tablets" style="text-align: center" action="https://jumprock.co/mail/kienkem" method="post">
 						<h4>Đăng ký miễn phí</h4>
 						<p>Đăng ký ngay để nhận thông tin sớm nhất. Hotline: 0945505885</p>
 						<div class="input-group mb-3">
@@ -200,9 +210,12 @@
 							</div>
 							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
 						</div>
-							<div style="text-align: center"><button type="submit" class="btn btn-register-pay mt-2">ĐĂNG KÝ NGAY</button></div>
+							<div style="text-align: center">
+								<button type="submit" class="btn btn-register-pay mt-2">ĐĂNG KÝ NGAY</button>
+								<input type="hidden" name="after" value="http://localhost:8080/category/notification">
+							</div>
 						<h3 class="mt-4" style="color: #424F7E">Hotline 0945505885</h3>
-					</div>
+					</form>
 				</div>
 			</div>
   		</div>
