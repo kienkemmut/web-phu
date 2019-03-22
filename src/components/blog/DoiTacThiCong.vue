@@ -71,24 +71,6 @@
                             <p style="color: #717B9E">11/03/2019</p>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-5">
-                            <div class="image-block-sidebar"></div>
-                        </div>
-                        <div class="col-7 text-block-sidebar">
-                            <p>Bất động sản nghỉ dưỡng – Kênh đầu tư an toàn, hiệu quả</p>
-                            <p style="color: #717B9E">11/03/2019</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-5">
-                            <div class="image-block-sidebar"></div>
-                        </div>
-                        <div class="col-7 text-block-sidebar">
-                            <p>Bất động sản nghỉ dưỡng – Kênh đầu tư an toàn, hiệu quả</p>
-                            <p style="color: #717B9E">11/03/2019</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="sidebar-posts-details">
                     <p style="font-weight: bold; text-align: center">Có thể bạn quan tâm?</p>

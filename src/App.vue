@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <Header></Header>
     <Nav class="nav-sticky"></Nav>
     <router-view/> 
     <Footer></Footer>
@@ -21,13 +20,11 @@
 </template>
 
 <script>
-import Header from './components/common/Header.vue'
 import Footer from './components/common/Footer.vue'
 import Nav from './components/common/Nav.vue'
 import ModalDownload from './components/common/ModalDownload.vue'
 export default {
   components: {
-    Header,
     Footer,
     Nav,
     ModalDownload

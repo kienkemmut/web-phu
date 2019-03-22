@@ -26,8 +26,8 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home,
+      name: 'Vinhomeswest',
+      component: Vinhomeswest,
       meta: {
         title: 'Trang chủ'
       }
@@ -43,14 +43,6 @@ const router = new Router({
           component: Notification,
           meta: {
             title: 'Thông báo'
-          }
-        },
-        {
-          path: "vinhomeswest",
-          name: "Vinhomeswest",
-          component: Vinhomeswest,
-          meta: {
-            title: 'Vinhomes West'
           }
         }
       ]
