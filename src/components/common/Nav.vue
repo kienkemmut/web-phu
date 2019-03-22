@@ -16,12 +16,6 @@
                         <router-link class="nav-link" :class="{ active: isActive('vinpearl') }" @click.native="closeToggle('vinpearl')" to="">VINPEARL</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :class="{ active: isActive('vincom-shophouse') }" @click.native="closeToggle('vincom-shophouse')" to="">VINCOM SHOPHOUSE</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" :class="{ active: isActive('goc-dau-tu') }" @click.native="closeToggle('goc-dau-tu')" to="">GÓC ĐẦU TƯ</router-link>
-                    </li>
-                    <li class="nav-item">
                         <router-link class="nav-link" :class="{ active: isActive('news') }" @click.native="closeToggle('news')" to="/blog/posts"><span>TIN TỨC</span></router-link>
                     </li>
                     <li class="nav-item last-item">

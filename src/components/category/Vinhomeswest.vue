@@ -20,7 +20,6 @@
 				<form class="form-mail" action="https://jumprock.co/mail/kienkem" method="post">
 					<div class="form-group form-mail-custom">
 						<label style="font-weight: bold; font-size: 24px; color: #ffffff">Nhận trọn bộ tài liệu</label>
-						<p style="font-weight: bold; font-size: 20px; color: #fff">Hotline: 0945505885</p>
 						<div class="form-group row">
 							<div class="input-group col-lg-3 col-sm-12 mb-3">
 								<div class="input-group-prepend">
@@ -108,6 +107,7 @@
 						</b-tabs>
 					</b-card>
 				</div>
+				<button type="button" class="btn mt-3 btn-download-pay" data-toggle="modal" data-target="#exampleModalCenter">TẢI MẶT BẰNG - BẢNG GIÁ - CHÍNH SÁCH</button>
 			</div>
 			<div class="page-smart-vinhome mt-3">
 				<p class="text-page-smart">CUỘC SỐNG TIỆN NGHI VÀ ĐẲNG CẤP TẠI SUNSINE CITY</p>
@@ -178,7 +178,7 @@
 				<p class="text-page-pay">GIÁ BÁN VÀ TIẾN ĐỘ THANH TOÁN</p>
 				<div class="image-line-pay"></div>
 				<div class="row">
-					<div class="col-lg-6 col-sm-12 div-padding-tablets" style="text-align: left;">
+					<div class="col-lg-12 col-sm-12 div-padding-tablets" style="text-align: left;">
 						<p>Đặt cọc</p>
 						<p>Đợt 1</p>
 						<p>Đợt 2</p>
@@ -189,10 +189,9 @@
 						<p>Đợt 7</p>
 						<p>Đợt 8</p>
 					</div>
-					<form class="col-lg-6 col-sm-12 div-padding-tablets" style="text-align: center" action="https://jumprock.co/mail/kienkem" method="post">
-						<h4>Đăng ký miễn phí</h4>
-						<p>Đăng ký ngay để nhận thông tin sớm nhất. Hotline: 0945505885</p>
-						<div class="input-group mb-3">
+					<form class="col-lg-12 col-sm-12 form-register-custom div-padding-tablets" action="https://jumprock.co/mail/kienkem" method="post">
+						<h4 class="mt-3">ĐĂNG KÝ MIỄN PHÍ</h4>
+						<div class="input-group mb-3 mt-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><font-awesome-icon :icon="['fas', 'user']" :style="{color: '#424F7E'}" class="icon alt"/></span>
 							</div>
@@ -210,11 +209,10 @@
 							</div>
 							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
 						</div>
-							<div style="text-align: center">
-								<button type="submit" class="btn btn-register-pay mt-2">ĐĂNG KÝ NGAY</button>
+							<div class="mb-3">
+								<button type="submit" class="btn btn-register-pay">ĐĂNG KÝ NGAY</button>
 								<input type="hidden" name="after" value="http://localhost:8080/category/notification">
 							</div>
-						<h3 class="mt-4" style="color: #424F7E">Hotline 0945505885</h3>
 					</form>
 				</div>
 			</div>
@@ -245,11 +243,16 @@
 			</div>	
   		</div>
   	</div>
+	  <ModalDownload></ModalDownload>
   </div>
 </template>
 
 <script>
+import ModalDownload from '../common/ModalDownload.vue'
 export default {
+  components: {
+    ModalDownload
+  },
   data () {
     return {
       scrollOffset: -window.innerWidth * 0.035

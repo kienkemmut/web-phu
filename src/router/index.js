@@ -33,7 +33,7 @@ const router = new Router({
       }
     },
     {
-      path: '/category',
+      path: '/',
       name: 'Category',
       component: Category,
       children: [

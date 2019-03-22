@@ -14,9 +14,10 @@ import '../node_modules/font-awesome/css/font-awesome.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faComment } from '@fortawesome/free-regular-svg-icons'
-import { faUser, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-var VueScrollTo = require('vue-scrollto');
-library.add(faComment, faUser, faPhone, faEnvelope)
+import { faUser, faPhone, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'
+import VueCarousel from 'vue-carousel'
+var VueScrollTo = require('vue-scrollto')
+library.add(faComment, faUser, faPhone, faEnvelope, faDownload)
 
 global.jQuery = jQuery
 global.$ = jQuery
@@ -25,6 +26,7 @@ Vue.config.productionTip = false
 Vue.use(VueRouterMultiView)
 Vue.use(BootstrapVue)
 Vue.use(VueScrollTo)
+Vue.use(VueCarousel)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

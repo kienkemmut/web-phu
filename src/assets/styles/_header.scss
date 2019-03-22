@@ -1,25 +1,126 @@
 .screen-header {
-	padding: 3em 0em 3.5em 10em !important;
-	background-color: rgba(39, 57, 110, 1);
-	color: #ffffff;
+	padding: 0em 0em 0em 10em !important;
+	background-color: rgba(252,252,252,1);
+	//color: #ffffff;
 	@include mobile {
-		padding: 0.8em !important;
+		padding: 0em !important;
 	}
 	@include tablets {
-		padding: 1.5em 0em 2em 5em !important;
+		padding: 0em 0em 0em .5em !important;
 	}
 	@include tablets-pro {
-		padding: 1.5em 0em 2em 2.5em !important;
+		padding: 0em 0em 0em .5em !important;
 	}
 	@include mobile-horizontal {
-		padding: .5em 0em 1em 2em !important;
+		padding: 0em !important;
 	}
 	@include mobile-horizontal-lg {
-		padding: .5em 0em 1em 2em !important;
+		padding: 0!important;
 	}
 	@include tablets-horizontal {
-		padding: 1.5em 0em 2em 2.5em !important;
+		padding: 0em 0em 0em .5em !important;
 	}
+	.div-img-header {
+		padding-left: 380px !important;
+		padding-right: 0 !important;
+		@include mobile {
+		}
+		@include tablets {
+			padding: 0 !important;
+		}
+		@include tablets-pro {
+			padding: 0 !important;
+		}
+		@include mobile-horizontal {
+			padding: 0 !important;
+		}
+		@include mobile-horizontal-lg {
+			padding: 0 !important;
+		}
+		@include tablets-horizontal {
+			padding: 0 !important;
+		}
+		.img-header {
+			float: right;
+			width: 100%;
+			height: 15vh;
+			opacity: .8;
+			cursor: pointer;
+			@include mobile {
+				display: none;
+			}
+			@include tablets {
+				width: 80%;
+				height: 10vh;
+				padding: 0 !important;
+			}
+			@include tablets-pro {
+				width: 80%;
+				height: 10vh;
+				padding: 0 !important;
+			}
+			@include mobile-horizontal {
+				display: none;
+			}
+			@include mobile-horizontal-lg {
+				display: none;
+			}
+			@include tablets-horizontal {
+			}
+		}
+	}
+	.div-logo-header {
+		@include mobile {
+			padding: 0 !important;
+			text-align: center;
+		}
+		@include tablets {
+			padding: 0 !important;
+			text-align: center;
+		}
+		@include tablets-pro {
+			padding: 0 !important;
+			text-align: center;
+		}
+		@include mobile-horizontal {
+			padding: 0 !important;
+			text-align: center;
+		}
+		@include mobile-horizontal-lg {
+			padding: 0 !important;
+			text-align: center;
+		}
+		@include tablets-horizontal {
+			padding: 0 !important;
+			text-align: center;
+		}
+		.logo-header {
+			width: 100%;
+			height: 15vh;
+			cursor: pointer;
+			@include mobile {
+				width: 50%;
+				height: 10vh;
+			}
+			@include tablets {
+				width: 70%;
+				height: 10vh;
+				padding: 0 !important;
+			}
+			@include tablets-pro {
+				height: 10vh;
+			}
+			@include mobile-horizontal {
+				width: 50%;
+				height: 15vh;
+			}
+			@include mobile-horizontal-lg {
+			}
+			@include tablets-horizontal {
+			}
+		}
+	}
+
 }
 .logo-app {
 	font-size: 28px;
@@ -38,8 +139,11 @@
 }
 .nav-custom {
 	padding: 0em 0em 0em 1.5em !important;
-	background-color: rgba(19, 36, 94, 1) !important;
-	//align-items: center;
+	background-color: rgba(84, 111, 137, 1) !important;
+	-moz-box-shadow: 0px 4px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 0px 4px 5px rgba(68,68,68,0.6);
+	box-shadow: 0px 4px 5px rgba(68,68,68,0.6);
+	border: 1px solid rgba(84, 111, 137, 1);
 	.nav-item {
 		color: white !important;
 	}
@@ -47,7 +151,7 @@
 		border-radius: 0 !important
 	}
 	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-		background-color: #424F7E !important;
+		background-color: #657D94 !important;
 	}
 	a {
 		color: #ffffff !important;
@@ -55,7 +159,7 @@
 		font-weight: bold !important;
 	}
 	li{
-		border-right: 0.2px solid #353C55 ;
+		border-right: 0.2px solid #748A9E ;
 	}
 	.last-item {
 		border-right: none ;
@@ -86,7 +190,7 @@
 		}
 	}
 	.nav-link:hover {
-		background-color: #424F7E !important;
+		background-color: #657D94 !important;
 	}
 	@include mobile {
 		padding: 0 !important;

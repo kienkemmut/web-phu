@@ -5,9 +5,17 @@
     <Nav class="nav-sticky"></Nav>
     <router-view/> 
     <Footer></Footer>
-    <button class="hotline">HOTLINE 0945505885</button>
-    <button class="download" data-toggle="modal" data-target="#exampleModalCenter">TẢI MẶT BẰNG - BẢNG GIÁ - CHÍNH SÁCH</button>
-    <div class="p-1" style="background-color:#304658; text-align: center; color:  #ffffff">Copyright 2019 © VinCity Sportia</div>
+    <div>
+      <button class="hotline">HOTLINE 0945505885
+        <div class="lds-ripple"><span class="icon-phone-cus"><font-awesome-icon :icon="['fas', 'phone']" :style="{color: '#ffffff'}" class="icon alt icon-phone-custom"/></span><div></div><div></div></div>
+      </button>
+    </div>
+    <div>
+      <button class="download" data-toggle="modal" data-target="#exampleModalCenter">TẢI MẶT BẰNG - BẢNG GIÁ - CHÍNH SÁCH
+        <div class="lds-ripple-down"><span class="icon-download-cus"><font-awesome-icon :icon="['fas', 'download']" :style="{color: '#424F7E'}" class="icon alt icon-download-custom"/></span><div></div><div></div></div>
+      </button>
+    </div>
+    <div class="p-1" style="background-color:#304658; text-align: center; color:  #ffffff">Copyright 2019 © VinCityVN</div>
     <ModalDownload></ModalDownload>
   </div>
 </template>
@@ -27,13 +35,3 @@ export default {
   name: 'App'
 }
 </script>
-
-<style>
-/*#app {*/
-  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
-  /*text-align: center;*/
-  /*color: #2c3e50;*/
-/*}*/
-</style>

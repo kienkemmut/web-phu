@@ -181,6 +181,14 @@
 			font-size: 18px;
 		}
 	}
+	.btn-download-pay {
+		width: 100%;
+		color: #ffffff;
+		background-color: rgba(84,111,137,1);
+	}
+	.btn-download-pay:hover {
+		color: #ffffff;
+	}
 }
 .page-smart-vinhome {
 	.div-image-transition {
@@ -291,6 +299,12 @@
 	}
 }
 .screen-page-pay {
+	.form-register-custom {
+		text-align: center;
+		background-color: rgba(242,243,244,.5);
+		margin-left: 14px;
+		border: 1px solid rgba(193,198,203,1) ;
+	}
 	.div-padding-tablets {
 		@include tablets {
 			padding-right: 0;
@@ -322,7 +336,8 @@
 		text-align: center;
 	}
 	.btn-register-pay {
-		border-radius: 5em;
+		padding: .3em 5em .3em 5em;
+		border-radius: 5px;
 		color: #ffffff;
 		background-color: #2A396E !important
 	}
