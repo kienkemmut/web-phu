@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="content-box">
-            <b-carousel
+<!--             <b-carousel
                     id="carousel-fade"
                     style="text-shadow: 0px 0px 2px #000"
                     fade
@@ -11,7 +11,7 @@
             >
                 <b-carousel-slide caption="" :img-src="require('../assets/images/slide-1.jpg')" @click.native="changeDetails()"/>
                 <b-carousel-slide caption="" :img-src="require('../assets/images/slide-2.jpg')" />
-            </b-carousel>
+            </b-carousel> -->
             <form class="mt-3" action="https://jumprock.co/mail/kienkem" method="post">
                 <div class="form-group form-register-home">
                     <label style="font-weight: bold; font-size: 24px; color: #ffffff; margin-bottom: 1em">Nhận trọn bộ tài liệu</label>

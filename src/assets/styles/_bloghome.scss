@@ -1,6 +1,6 @@
 .screen-posts {
   font-size: 16px !important;
-  padding: 0em 10em 0 10em;
+  padding: 0em 4em 0 4em;
   @include mobile {
     padding: 0em;
   }
@@ -28,6 +28,7 @@
           background-image: url("../images/vincity-ocean-park-new-posts.jpg");
           background-size: 100% 100%;
           background-repeat: no-repeat;
+          cursor: pointer;
           @include mobile {
             height: 30vh;
           }
@@ -80,10 +81,11 @@
       }
       .details-posts-image {
         width: 100%;
-        height: 25vh;
+        height: 50vh;
         background-image: url("../images/vin-west.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        cursor: pointer;
         @include tablets-pro {
           height: 15vh;
         }

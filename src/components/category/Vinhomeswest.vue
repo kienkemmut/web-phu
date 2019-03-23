@@ -1,5 +1,14 @@
 <template>
-  <div>
+  	<div>
+		<div class="mb-2" style="padding: 1em">
+			<b-carousel
+	            id="carousel-fade"
+	            style="text-shadow: 0px 0px 2px #000"
+	            :interval="4000"
+        	>
+            	<b-carousel-slide id="slide-1" caption="" :img-src="require('../../assets/images/slide-1.jpg')" @click.native="clickRegister()"/>
+    		</b-carousel>
+  		</div>
   	<div class="row mt-2 pl-3">
   		<div class="col-lg-9 col-sm-12 content-page-padding">
 			<div class="content-page-detail">
@@ -189,30 +198,34 @@
 						<p>Đợt 7</p>
 						<p>Đợt 8</p>
 					</div>
-					<form class="col-lg-12 col-sm-12 form-register-custom div-padding-tablets" action="https://jumprock.co/mail/kienkem" method="post">
-						<h4 class="mt-3">ĐĂNG KÝ MIỄN PHÍ</h4>
-						<div class="input-group mb-3 mt-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text"><font-awesome-icon :icon="['fas', 'user']" :style="{color: '#424F7E'}" class="icon alt"/></span>
+					<form class="form-mail form-register-custom" action="https://jumprock.co/mail/kienkem" method="post">
+						<div class="form-group form-mail-custom">
+							<label style="font-weight: bold; font-size: 24px; color: #424F7E">Nhận trọn bộ tài liệu</label>
+							<div class="form-group row pl-3">
+								<div class="input-group col-lg-4 col-sm-12 mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><font-awesome-icon :icon="['fas', 'user']" :style="{color: '#424F7E'}" class="icon alt"/></span>
+									</div>
+									<input type="text" name="name" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Họ và tên*">
+								</div>
+								<div class="input-group col-lg-4 col-sm-12 mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><font-awesome-icon :icon="['fas', 'phone']" :style="{color: '#424F7E'}" class="icon alt"/></span>
+									</div>
+									<input type="text" name="phone" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Số điện thoại*">
+								</div>
+								<div class="input-group col-lg-4 col-sm-12 mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><font-awesome-icon :icon="['fas', 'envelope']" :style="{color: '#424F7E'}" class="icon alt"/></span>
+									</div>
+									<input type="email" name="email" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
+								</div>
 							</div>
-							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Họ và tên*">
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text"><font-awesome-icon :icon="['fas', 'phone']" :style="{color: '#424F7E'}" class="icon alt"/></span>
-							</div>
-							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Số điện thoại*">
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text"><font-awesome-icon :icon="['fas', 'envelope']" :style="{color: '#424F7E'}" class="icon alt"/></span>
-							</div>
-							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Email*">
-						</div>
-							<div class="mb-3">
-								<button type="submit" class="btn btn-register-pay">ĐĂNG KÝ NGAY</button>
+							<div style="text-align: center">
+								<button type="submit" class="btn btn-register-now">ĐĂNG KÝ NGAY</button>
 								<input type="hidden" name="after" value="http://localhost:8080/category/notification">
 							</div>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -229,17 +242,12 @@
 			    <!--<li class="list-group-item">CUỘC SỐNG TIỆN NGHI VÀ ĐẲNG CẤP TẠI SUNSINE CITY</li>-->
 			    <!--<li class="list-group-item">GIÁ BÁN VÀ TIẾN ĐỘ THANH TOÁN</li>-->
 			  <!--</ul>-->
-				<button type="button" v-scroll-to="{el: '.content-page-detail', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-details mb-1 mt-1">SUNSINE CTTY - NGHỆ THUẬT SỐNG THƯỢNG LƯU</button>
-				<button type="button" v-scroll-to="{el: '.content-page-overview', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-overview mb-1">TỔNG QUAN SUNSINE CITY VÕ CHÍ CÔNG</button>
-				<button type="button" v-scroll-to="{el: '.content-page-design', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-design mb-1">MẶT BẰNG VÀ THIẾT KẾ CĂN HỘ SUNSINE CITY</button>
-				<button type="button" v-scroll-to="{el: '.page-smart-vinhome', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-smart mb-1">CUỘC SỐNG TIỆN NGHI VÀ ĐẲNG CẤP TẠI SUNSINE CITY</button>
+				<button type="button" v-scroll-to="{el: '.content-page-detail', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-details mb-1 mt-1">SUNSINE CTTY - NGHỆ THUẬT</button>
+				<button type="button" v-scroll-to="{el: '.content-page-overview', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-overview mb-1">TỔNG QUAN SUNSINE CITY</button>
+				<button type="button" v-scroll-to="{el: '.content-page-design', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-design mb-1">MẶT BẰNG VÀ THIẾT KẾ</button>
+				<button type="button" v-scroll-to="{el: '.page-smart-vinhome', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-smart mb-1">CUỘC SỐNG TIỆN NGHI VÀ ĐẲNG CẤP</button>
 				<button type="button" v-scroll-to="{el: '.screen-page-pay', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-pay mb-1">GIÁ BÁN VÀ TIẾN ĐỘ THANH TOÁN</button>
-			  <div class="card-header">
-			  	<p>Có thể bạn quan tâm?</p>
-			  	<p>Có thể bạn quan tâm? Có thể bạn quan tâm? Có thể bạn quan tâm? Có thể bạn quan tâm?</p>
-			  	<p>Có thể bạn quan tâm? Có thể bạn quan tâm? Có thể bạn quan tâm? Có thể bạn quan tâm?</p>
-			  	<div style="text-align: center"><button type="button" class="btn btn-custom">Xem chi tiết</button></div>
-			  </div>
+			  <div class="card-header logo-banner" @click="btnRegisterBanner"></div>
 			</div>	
   		</div>
   	</div>
@@ -260,6 +268,15 @@ export default {
   },
   created: function () {
     // console.log(window.innerWidth,this.scrollOffset, 'window width')
+  },
+  methods: {
+  	clickRegister: function () {
+  		console.log('123123')
+  		$('#exampleModalCenter').modal('show')
+  	},
+  	btnRegisterBanner: function () {
+  		$('#exampleModalCenter').modal('show')
+  	}
   }
 }
 </script>

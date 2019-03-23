@@ -6,6 +6,10 @@ import Vinhomeswest from '@/components/category/Vinhomeswest'
 import Blog from '@/components/blog/index'
 import Posts from '@/components/blog/Posts'
 import Doitacthicong from '@/components/blog/DoiTacThiCong'
+import ViTri from '@/components/blog/ViTri'
+import MatBang from '@/components/blog/MatBang'
+import ChinhSach from '@/components/blog/ChinhSach'
+import CanHoMau from '@/components/blog/CanHoMau'
 import Notification from '@/components/common/PageNotification'
 
 Vue.use(Router)
@@ -44,6 +48,38 @@ const router = new Router({
           meta: {
             title: 'Thông báo'
           }
+        },
+        {
+          path: "/vi-tri",
+          name: "ViTri",
+          component: ViTri,
+          meta: {
+            title: 'Vị Trí'
+          }
+        },
+        {
+          path: "/mat-bang",
+          name: "MatBang",
+          component: MatBang,
+          meta: {
+            title: 'Mặt Bằng'
+          }
+        },
+        {
+          path: "/chinh-sach",
+          name: "ChinhSach",
+          component: ChinhSach,
+          meta: {
+            title: 'Chính Sách'
+          }
+        },
+        {
+          path: "/can-ho-mau",
+          name: "CanHoMau",
+          component: CanHoMau,
+          meta: {
+            title: 'Căn Hộ Mẫu'
+          }
         }
       ]
     },
@@ -67,7 +103,7 @@ const router = new Router({
           meta: {
             title: 'Đối tác thi công'
           }
-        }
+        }        
       ]
     }
   ]

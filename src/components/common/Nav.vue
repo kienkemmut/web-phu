@@ -6,29 +6,26 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="logo-header"></div>
-            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end">
+            <div class="logo-header" @click="clickHome()"></div>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-start">
                 <ul class="nav nav-pills nav-padding">
                     <li class="nav-item ">
-                        <router-link class="nav-link" :class="{ active: isActive('home') }" @click.native="closeToggle('home')" to="/">HOME</router-link>
+                        <router-link class="nav-link" :class="{ active: isActive('home') }" @click.native="closeToggle('home')" to="/">TRANG CHỦ</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :class="{ active: isActive('position') }" @click.native="closeToggle('position')" to="">VỊ TRÍ</router-link>
+                        <router-link class="nav-link" :class="{ active: isActive('position') }" @click.native="closeToggle('position')" to="/vi-tri">VỊ TRÍ</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :class="{ active: isActive('matbang') }" @click.native="closeToggle('matbang')" to="">MẶT BẰNG THIẾT KẾ</router-link>
+                        <router-link class="nav-link" :class="{ active: isActive('matbang') }" @click.native="closeToggle('matbang')" to="/mat-bang">MẶT BẰNG THIẾT KẾ</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :class="{ active: isActive('chinhsach') }" @click.native="closeToggle('chinhsach')" to=""><span>CHÍNH SÁCH BÁN HÀNG</span></router-link>
+                        <router-link class="nav-link" :class="{ active: isActive('chinhsach') }" @click.native="closeToggle('chinhsach')" to="/chinh-sach"><span>CHÍNH SÁCH BÁN HÀNG</span></router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :class="{ active: isActive('canhomau') }" @click.native="closeToggle('canhomau')" to=""><span>CĂN HỘ MẪU</span></router-link>
+                        <router-link class="nav-link" :class="{ active: isActive('canhomau') }" @click.native="closeToggle('canhomau')" to="/can-ho-mau"><span>CĂN HỘ MẪU</span></router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" :class="{ active: isActive('news') }" @click.native="closeToggle('news')" to="/blog/posts"><span>TIN TỨC</span></router-link>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a class="nav-link active" href="#"><span><font-awesome-icon :icon="['fas', 'phone']" class="icon alt"/></span> HOTLINE 0945505885</a>
                     </li>
                 </ul>
             </div>
@@ -50,6 +47,9 @@
       },
       isActive: function (menuItem) {
         return this.activeItem === menuItem
+      },
+      clickHome: function () {
+        this.$router.push({ name: 'Vinhomeswest' })
       }
     }
   }
