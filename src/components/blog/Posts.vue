@@ -6,7 +6,7 @@
                 <div class="col-lg-9 col-sm-12 block-new-posts">
                     <div class="row block-1 mb-3">
                         <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
-                            <div class="posts-image-1" @click="watchDetailsPost()"></div>
+                            <img class="posts-image-1" :src="require('../../assets/images/vincity-ocean-park-new-posts.jpg')" @click="watchDetailsPost()"/>
                         </div>
                         <div class="col-lg-6 col-sm-12 div-res-image">
                             <p style="font-weight: bold; cursor: pointer;" @click="watchDetailsPost()">Đối tác thi công biển hồ nước mặn tại Vincity Ocean Park “khủng” cỡ nào?</p>
@@ -15,9 +15,9 @@
                             <br><br><br>
                         </div>
                     </div>
-                                        <div class="row block-1 mb-3">
+                    <div class="row block-1 mb-3">
                         <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
-                            <div class="posts-image-1" @click="watchDetailsPost()"></div>
+                            <img class="posts-image-1" :src="require('../../assets/images/vincity-ocean-park-new-posts.jpg')" @click="watchDetailsPost()"/>
                         </div>
                         <div class="col-lg-6 col-sm-12 div-res-image">
                             <p style="font-weight: bold; cursor: pointer;" @click="watchDetailsPost()">Đối tác thi công biển hồ nước mặn tại Vincity Ocean Park “khủng” cỡ nào?</p>
@@ -26,9 +26,9 @@
                             <br><br><br>
                         </div>
                     </div>
-                                        <div class="row block-1 mb-3">
+                    <div class="row block-1 mb-3">
                         <div class="col-lg-6 col-sm-12 col-md-12 div-res-image">
-                            <div class="posts-image-1" @click="watchDetailsPost()"></div>
+                            <img class="posts-image-1" :src="require('../../assets/images/vincity-ocean-park-new-posts.jpg')" @click="watchDetailsPost()"/>
                         </div>
                         <div class="col-lg-6 col-sm-12 div-res-image">
                             <p style="font-weight: bold; cursor: pointer;" @click="watchDetailsPost()">Đối tác thi công biển hồ nước mặn tại Vincity Ocean Park “khủng” cỡ nào?</p>
@@ -39,10 +39,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 sidebar-posts">
-<!--                     <div class="mb-3" style="text-align: center">
-                        <button type="button" class="btn btn-sidebar-posts-details">XEM CHI TIẾT</button>
-                    </div> -->
-                    <div class="details-posts-image" @click="showBanner()"></div>
+                    <img class="details-posts-image" :src="require('../../assets/images/vincity-ocean-park-new-posts.jpg')" @click="showBanner()"/>
                 </div>
             </div>
         </div>

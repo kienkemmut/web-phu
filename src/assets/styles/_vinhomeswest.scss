@@ -24,14 +24,13 @@
 		}
 	}
 	.image-block-vin {
-		padding: 0em 3em 0em 3em;
+		padding: 0em 2em 0em 2em;
 		.image-vinhomeswest {
-			padding: 1em;
 			width: 100%;
 			height: 50vh;
-			background-image: url("../images/vinhomeswest.jpg");
-			background-size: 100% 100%;
-			background-repeat: no-repeat;
+			//background-image: url("../images/vinhomeswest.jpg");
+			//background-size: 100% 100%;
+			//background-repeat: no-repeat;
 			@include mobile {
 				height: 30vh;
 			}
@@ -84,9 +83,12 @@
 	.logo-banner{
 		width: 100%;
 		height: 35vh;
-		background-image: url(../images/vin-west.jpg);
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
+		//background-image: url(../images/vin-west.jpg);
+		//background-size: 100% 100%;
+		//background-repeat: no-repeat;
+	}
+	.logo-banner:hover {
+		cursor: pointer;
 	}
 	.btn-sidebar-details {
 		border: 1px solid #F0F1F4;
@@ -192,9 +194,13 @@
 		}
 	}
 	.btn-download-pay {
-		width: 100%;
+		padding: .5em 5em;
 		color: #ffffff;
 		background-color: rgba(84,111,137,1);
+		@include mobile {
+			padding: 0;
+			width: 100%;
+		}
 	}
 	.btn-download-pay:hover {
 		color: #ffffff;
@@ -260,9 +266,9 @@
 		display: inline-block;
 		width: 100%;
 		height: 30vh;
-	    background-image: url("../images/vin-stay.jpg");
-	    background-size: 100% 100%;
-	    background-repeat: no-repeat;
+	    //background-image: url("../images/vin-stay.jpg");
+	    //background-size: 100% 100%;
+	    //background-repeat: no-repeat;
 		transition: all .5s ease-in-out;
 		@include mobile {
 			height: 20vh;
@@ -278,12 +284,11 @@
 		transform: scale(1.05);
 	}
 	.image-vinhomeswest-1 {
-		padding: 1em;
 		width: 100%;
 		height: 20vh;
-	    background-image: url("../images/vinhomeswest.jpg");
-	    background-size: 100% 100%;
-	    background-repeat: no-repeat;
+	    //background-image: url("../images/vinhomeswest.jpg");
+	    //background-size: 100% 100%;
+	    //background-repeat: no-repeat;
 		transition: all .5s ease-in-out;
 		@include mobile {
 			height: 15vh;
@@ -363,5 +368,26 @@
 	@include mobile {
 		padding-right: 5px !important;
 		padding-left: 5px !important;
+	}
+}
+.screen-home-vip {
+	padding: 0 4em 0 4em;
+	@include mobile {
+		padding: 0 0 0 1em;
+	}
+	@include tablets {
+
+	}
+	@include tablets-pro {
+
+	}
+	@include mobile-horizontal {
+
+	}
+	@include mobile-horizontal-lg {
+
+	}
+	@include tablets-horizontal {
+
 	}
 }

@@ -1,6 +1,6 @@
 <template>
     <div >
-        <nav class="navbar navbar-expand-lg navbar-dark nav-custom">
+        <nav class="navbar navbar-expand-lg navbar-light nav-custom">
             <!--<img class="logo-header" src="../../assets/images/motbuoc.jpg" @click="changeHome()"/>-->
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

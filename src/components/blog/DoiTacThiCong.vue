@@ -7,15 +7,14 @@
                 <p>Crystal Lagoons là tập đoàn chuyên xây dựng các công trình biển hồ nhân tạo, được thành lập vào năm 2007 tại Miami – Hoa Kỳ bởi doanh nhân kiêm nhà khoa học Fernando Fischmann. Chỉ sau 3 năm hoạt động, Crystal Lagoons đã được định giá lên tói 1.8 tỷ USD bởi Boston Consulting Group, một con số ấn tượng mà ngay cả Google hay Facebook cũng chưa đạt được.</p>
                 <p>Trong những năm gần đây, Crystal Lagoons đang này càng mở rộng và phát triển, ghi dấu ấn tại nhiều quốc gia vói những công trình biển hồ nước mặn tại các khu đô thị hay các khu nghỉ dưỡng. Với công nghệ hiện đại vượt bậc, các dự án biển hồ do Crystal Lagoons triển khai luôn sử dụng ít hóa chất hơn 100 lần so với bể bơi thông thường, vừa thân thiện với môi trường, vừa đảm bảo sức khỏe cho mọi người.</p>
                 <div class="card mb-3" style="width: 100%;">
-                    <!--<img class="card-img-top" src="../../assets/images/san-alfonso-del-mar.jpg" alt="Card image cap">-->
-                    <div class="images-doi-tac"></div>
+                    <img class="images-doi-tac" :src="require('../../assets/images/san-alfonso-del-mar.jpg')"/>
                     <div class="card-body">
                         <p class="card-text">Có thể bạn chưa biết, Crystal Lagoons chính là tên tuổi đứng đằng sau công trình bể bơi nhân tạo lớn nhất thế giới San Alfonso del Mar tại Chile</p>
                     </div>
                 </div>
                 <p>Tại Việt Nam, Vingroup là tập đoàn đầu tiên dám “mạnh tay” chi một khoản tiền cực khủng để “đưa biển hồ vào thành phố” nhằm hiện thực hóa ước mơ sống gần biển tới những người dân luôn phải bộn bề công việc giữa chốn thủ đô đông đúc & ồn ào.</p>
                 <p>Song song với khu biển hồ nước mặn rộng lên tới 6.1 ha, Vingroup còn triển khai thêm hồ điều hòa rộng lên tới 24.5 ha ngay trung tâm khu đô thị cùng hệ thống công viên cây xanh rộng lên tới 62 ha xen kẽ bên dưới mỗi tòa tháp căn hộ, qua đó mở ra một không gian sống xanh dương độc nhất vô nhị trong Hà Nội.</p>
-                <form style="border: 1px solid #A0A7BE; padding: 1em" action="https://jumprock.co/mail/kienkem" method="post">
+                <form style="border: 1px solid #A0A7BE; padding: 1em; text-align: center" action="https://jumprock.co/mail/kienkem" method="post">
                     <h4>Đăng ký miễn phí</h4>
                     <p>Đăng ký ngay để nhận thông tin sớm nhất. Hotline: 0945505885</p>
                     <div class="input-group mb-3">
@@ -42,38 +41,8 @@
                 </form>
             </div>
             <div class="col-3">
-<!--                 <div class="sidebar-new-posts">
-                    <div class="title-sidebar-new-posts mb-3">Tin tức mới nhất</div>
-                    <div class="row mb-3">
-                        <div class="col-5">
-                            <div class="image-block-sidebar"></div>
-                        </div>
-                        <div class="col-7 text-block-sidebar">
-                            <p>Bất động sản nghỉ dưỡng – Kênh đầu tư an toàn, hiệu quả</p>
-                            <p style="color: #717B9E">11/03/2019</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-5">
-                            <div class="image-block-sidebar"></div>
-                        </div>
-                        <div class="col-7 text-block-sidebar">
-                            <p>Bất động sản nghỉ dưỡng – Kênh đầu tư an toàn, hiệu quả</p>
-                            <p style="color: #717B9E">11/03/2019</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-5">
-                            <div class="image-block-sidebar"></div>
-                        </div>
-                        <div class="col-7 text-block-sidebar">
-                            <p>Bất động sản nghỉ dưỡng – Kênh đầu tư an toàn, hiệu quả</p>
-                            <p style="color: #717B9E">11/03/2019</p>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="sidebar-posts-details">
-                    <div class="details-new-posts-image" @click="showModal()"></div>
+                    <img class="details-new-posts-image" :src="require('../../assets/images/san-alfonso-del-mar.jpg')" @click="showModal()"/>
                 </div>
             </div>
         </div>

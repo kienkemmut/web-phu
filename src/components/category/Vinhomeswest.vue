@@ -1,20 +1,20 @@
 <template>
   	<div>
-		<div class="mb-2" style="padding: 1em">
+  	<div class="row mt-2 screen-home-vip">
+		<div class="mb-2 col-12">
 			<b-carousel
-	            id="carousel-fade"
-	            style="text-shadow: 0px 0px 2px #000"
-	            :interval="4000"
-        	>
-            	<b-carousel-slide id="slide-1" caption="" :img-src="require('../../assets/images/slide-1.jpg')" @click.native="clickRegister()"/>
-    		</b-carousel>
-  		</div>
-  	<div class="row mt-2 pl-3">
+					id="carousel-fade"
+					style="text-shadow: 0px 0px 2px #000"
+					:interval="4000"
+			>
+				<b-carousel-slide id="slide-1" caption="" :img-src="require('../../assets/images/slide-1.jpg')" @click.native="clickRegister()"/>
+			</b-carousel>
+		</div>
   		<div class="col-lg-9 col-sm-12 content-page-padding">
 			<div class="content-page-detail">
 				<p class="text1">SUNSINE CTTY - NGHỆ THUẬT SỐNG THƯỢNG LƯU</p>
 				<p class="text1">TUYỆT TÁC MỚI CỦA SUNSINE GROUP</p>
-				<div class="image-block-vin"><div class="image-vinhomeswest mb-2"></div></div>
+				<div class="image-block-vin"><img class="image-vinhomeswest mb-2" :src="require('../../assets/images/slide-1.jpg')"/></div>
 				<p class="text1">TUYỆT TÁC MỚI CỦA SUNSINE GROUP</p>
 				<div class="text-pr">
 					<ul>
@@ -70,7 +70,7 @@
 						<li>We can also style lists with colors, to make them look a little more interesting.</li>
 					</ul>
 				</div>
-				<div class="image-vinhom-stay mb-3"></div>
+				<img class="image-vinhom-stay mb-3" :src="require('../../assets/images/slide-1.jpg')"/>
 				<p style="font-weight: bold;">Vị trí Đại Mỗ Tây Mỗ</p>
 				<p>We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting We can also style lists with colors, to make them look a little more interesting</p>
 				<p>Dự án Vin chỉ cách:</p>
@@ -81,7 +81,7 @@
 					<p>500m đến thiên đường bảo sơn</p>
 					<p>500m đến thiên đường bảo sơn</p>
 				</div>
-				<div class="image-vinhom-stay mb-3"></div>
+				<img class="image-vinhom-stay mb-3" :src="require('../../assets/images/slide-1.jpg')"/>
 			</div>
 			<div class="content-page-design">
 				<p class="text-page-design">MẶT BẰNG VÀ THIẾT KẾ CĂN HỘ SUNSINE CITY</p>
@@ -92,31 +92,30 @@
 					<b-card no-body>
 						<b-tabs card nav-class="justify-content-center">
 							<b-tab no-body title="Picture 1">
-								<b-card-img bottom src="https://picsum.photos/600/200/?image=21" />
+								<b-card-img bottom :src="require('../../assets/images/slide-1.jpg')" />
 								<b-card-footer>Picture 1 footer</b-card-footer>
 							</b-tab>
 
 							<b-tab no-body title="Picture 2">
-								<b-card-img bottom src="https://picsum.photos/600/200/?image=25" />
+								<b-card-img bottom :src="require('../../assets/images/slide-1.jpg')" />
 								<b-card-footer>Picture 2 footer</b-card-footer>
 							</b-tab>
 
 							<b-tab no-body title="Picture 3">
-								<b-card-img bottom src="https://picsum.photos/600/200/?image=26" />
+								<b-card-img bottom :src="require('../../assets/images/slide-1.jpg')" />
 								<b-card-footer>Picture 3 footer</b-card-footer>
 							</b-tab>
 
-							<b-tab title="Text">
-								<h5>This tab does not have the <code>no-body</code> prop set</h5>
-								Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum
-								consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur
-								mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit
-								elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure.
+							<b-tab no-body title="Picture 4">
+								<b-card-img bottom :src="require('../../assets/images/slide-1.jpg')" />
+								<b-card-footer>Picture 3 footer</b-card-footer>
 							</b-tab>
 						</b-tabs>
 					</b-card>
 				</div>
-				<button type="button" class="btn mt-3 btn-download-pay" data-toggle="modal" data-target="#exampleModalCenter">TẢI MẶT BẰNG - BẢNG GIÁ - CHÍNH SÁCH</button>
+				<div style="text-align: center">
+					<button type="button" class="btn mt-3 btn-download-pay" data-toggle="modal" data-target="#exampleModalCenter">TẢI MẶT BẰNG - BẢNG GIÁ - CHÍNH SÁCH</button>
+				</div>
 			</div>
 			<div class="page-smart-vinhome mt-3">
 				<p class="text-page-smart">CUỘC SỐNG TIỆN NGHI VÀ ĐẲNG CẤP TẠI SUNSINE CITY</p>
@@ -152,34 +151,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-2">
-					<div class="col-6 div-image-transition">
-						<div class="image-vinhom-stay-1"></div>
+				<div class="row">
+					<div class="col-lg-6 col-sm-12 div-image-transition mb-1">
+						<!--<div class="image-vinhom-stay-1"></div>-->
+						<img class="image-vinhom-stay-1" :src="require('../../assets/images/slide-1.jpg')"/>
 					</div>
-					<div class="col-6 div-image-transition">
-						<div class="image-vinhom-stay-1"></div>
-					</div>
-				</div>
-				<div class="row mb-3">
-					<div class="col-4 div-image-transition">
-						<div class="image-vinhomeswest-1"></div>
-					</div>
-					<div class="col-4 div-image-transition">
-						<div class="image-vinhomeswest-1"></div>
-					</div>
-					<div class="col-4 div-image-transition">
-						<div class="image-vinhomeswest-1"></div>
+					<div class="col-lg-6 col-sm-12 div-image-transition mb-1">
+						<img class="image-vinhom-stay-1" :src="require('../../assets/images/slide-1.jpg')"/>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-4 div-image-transition">
-						<div class="image-vinhomeswest-1"></div>
+					<div class="col-lg-4 col-sm-12 div-image-transition mb-1">
+						<!--<div class="image-vinhomeswest-1"></div>-->
+						<img class="image-vinhomeswest-1" :src="require('../../assets/images/slide-1.jpg')"/>
 					</div>
-					<div class="col-4 div-image-transition">
-						<div class="image-vinhomeswest-1"></div>
+					<div class="col-lg-4 col-sm-12 div-image-transition mb-1">
+						<img class="image-vinhomeswest-1" :src="require('../../assets/images/slide-1.jpg')"/>
 					</div>
-					<div class="col-4 div-image-transition">
-						<div class="image-vinhomeswest-1"></div>
+					<div class="col-lg-4 col-sm-12 div-image-transition mb-1">
+						<img class="image-vinhomeswest-1" :src="require('../../assets/images/slide-1.jpg')"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-12 div-image-transition mb-1">
+						<img class="image-vinhomeswest-1" :src="require('../../assets/images/slide-1.jpg')"/>
+					</div>
+					<div class="col-lg-4 col-sm-12 div-image-transition mb-1">
+						<img class="image-vinhomeswest-1" :src="require('../../assets/images/slide-1.jpg')"/>
+					</div>
+					<div class="col-lg-4 col-sm-12 div-image-transition">
+						<img class="image-vinhomeswest-1" :src="require('../../assets/images/slide-1.jpg')"/>
 					</div>
 				</div>
 			</div>
@@ -247,7 +248,8 @@
 				<button type="button" v-scroll-to="{el: '.content-page-design', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-design mb-1">MẶT BẰNG VÀ THIẾT KẾ</button>
 				<button type="button" v-scroll-to="{el: '.page-smart-vinhome', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-smart mb-1">CUỘC SỐNG TIỆN NGHI VÀ ĐẲNG CẤP</button>
 				<button type="button" v-scroll-to="{el: '.screen-page-pay', offset: scrollOffset, duration: 1000}" class="btn btn-sidebar-pay mb-1">GIÁ BÁN VÀ TIẾN ĐỘ THANH TOÁN</button>
-			  <div class="card-header logo-banner" @click="btnRegisterBanner"></div>
+			  <!--<div class="card-header logo-banner" @click="btnRegisterBanner"></div>-->
+				<img class="card-header logo-banner" :src="require('../../assets/images/vinhomeswest.jpg')" @click="btnRegisterBanner"/>
 			</div>	
   		</div>
   	</div>

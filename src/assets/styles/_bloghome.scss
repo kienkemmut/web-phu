@@ -24,10 +24,7 @@
       .block-1 {
         .posts-image-1 {
           width: 100%;
-          height: 100%;
-          background-image: url("../images/vincity-ocean-park-new-posts.jpg");
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
+          height: 30vh;
           cursor: pointer;
           @include mobile {
             height: 30vh;
@@ -72,8 +69,8 @@
       top: 4em;
       color: #ffffff;
       height: 100%;
-      padding: 2em 1em 2em 1em;
-      background-color: rgba(19, 36, 94, 1);
+      //padding: 2em 1em 2em 1em;
+      //background-color: rgba(19, 36, 94, 1);
       border-radius: 3px;
       .btn-sidebar-posts-details {
         background: #424F7E;
@@ -82,9 +79,6 @@
       .details-posts-image {
         width: 100%;
         height: 50vh;
-        background-image: url("../images/vin-west.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         cursor: pointer;
         @include tablets-pro {
           height: 15vh;
